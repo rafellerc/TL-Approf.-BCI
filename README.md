@@ -1,6 +1,6 @@
-#TL d'Approfondissement - Brain Computer Interface
+# TL d'Approfondissement - Brain Computer Interface
 
-##Organisation
+## Organisation
 
 Ce repositoire contient tous les codes du projet, organises en diferents repertoires. Lisez la suite et mettez vos codes dans le repertoire correspondant.
 
@@ -11,3 +11,9 @@ Ce repositoire contient tous les codes du projet, organises en diferents reperto
 . src: Repertoire de fonctions et code source pour aider le developpement des programmes. Le code doit etre propre.
 
 Après faire 'push' de quoi que ce soit il faut indiquer sur Trello à quelle tâche ça correspond, et la mettre en 'Tâches Terminés - Done'.
+
+Les fichiers des enregistrements annotés doivent suivre la convention suivante:
+0 - Rien
+1 - Avance
+2 - Droite
+3 - Gauche  
