@@ -70,14 +70,14 @@ avance11 = H3(20225:23296);
 save('avance11.txt','avance11','-ascii','-double');
 
 %%
-Avance = [avance01' avance02' avance03' avance04' avance05' avance06' avance07' avance08' avance09' avance10' avance11']';
+Avance = [avance01 avance02 avance03 avance04 avance05 avance06 avance07 avance08 avance09 avance10 avance11];
 save('total_avance.txt','Avance','-ascii','-double');
-Rien = [rien01' rien02' rien03' rien04' rien05']';
+Rien = [rien01 rien02 rien03 rien04 rien05];
 save('total_rien.txt','Rien','-ascii','-double');
-Droite = [droite01' droite02' droite03' droite04' droite05' droite06']';
+Droite = [droite01 droite02 droite03 droite04 droite05 droite06]
 save('total_droite.txt','Droite','-ascii','-double');
-Gauche = [gauche01' gauche02' gauche03' gauche04' gauche05' gauche06' gauche07' gauche08']';
-save('total_gauche.txt','Gauche','-ascii','-double');
+Gauche = [gauche01]
+
 
 
 
