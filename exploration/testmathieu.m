@@ -2,18 +2,19 @@ clear all;
 
 addpath(genpath('\\ntelev.metz.supelec.centralesupelec.local\Users\daviet_mat\WINNT\Desktop\TLAppro\acquisition_biosemi\Enregistrements'));
 addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\obj'));
+addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
 
+X = load('herve001_labeled.txt');
 
-filename = 'total_droite';
+delta_f = 1;
+G = 0.1;
 
-fe  = 256;
-data = load(strcat(filename, '.txt'));
-G=1;
-df =1;
+[prediction] = commande(X(:,1),0.002, delta_f, G);
 
+erreur = erreurprediction(prediction, X(:,2))
 
-for i = 1:length(data)
-    for k = 1:3
-        y(i,k) = ;
-    end
-end
+axe = 1/256:1/256:size(prediction)/256;
+plot(axe, prediction);
+hold on;
+plot(axe,X(:,2));
+hold on;

@@ -1,0 +1,26 @@
+addpath(genpath('\\ntelev.metz.supelec.centralesupelec.local\Users\daviet_mat\WINNT\Desktop\TLAppro\acquisition_biosemi\Enregistrements'));
+addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\obj'));
+addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
+
+X = load('herve002_labeled.txt');
+
+labels = X(:,2);
+X = X(:,1);
+fe = 256;
+fc_1 = 7.5;
+fc_2 = 11;
+fc_3 = 13.5;
+delta_f = 1;
+G = 3;
+
+
+G = 0.01:0.01:5;
+delta_f = 0.001:0.01:3
+
+
+[Y1] = filtre (X,G,delta_f,fe,fc_1);
+[Y2] = filtre (X,G,delta_f,fe,fc_2);
+[Y3] = filtre (X,G,delta_f,fe,fc_3);
+
+[resultat] = SNR(Y1, Y2, Y3, labels);
+

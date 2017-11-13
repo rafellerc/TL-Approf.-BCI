@@ -1,0 +1,29 @@
+function [resultat] = SNR(Y1, Y2, Y3, labels)
+
+
+fenetresignal1 = (labels == 3);
+fenetresignal2 = (labels == 1);
+fenetresignal3 = (labels == 2);
+
+fenetrebruit1 = (labels ~= 3);
+fenetrebruit2 = (labels ~= 1);
+fenetrebruit3 = (labels ~= 2);
+
+
+P1 = Y1.^2;
+P2 = Y2.^2;
+P3 = Y3.^2;
+
+signal1 = sum(P1.*fentresignal1)/sum(fentresignal1 == 1);
+signal2 = sum(P2.*fentresignal2)/sum(fentresignal2 == 1);
+signal3 = sum(P3.*fentresignal3)/sum(fentresignal3 == 1);
+
+bruit1 = sum(P1.*fentrebruit1)/sum(fentrebruit1 == 1);
+bruit1 = sum(P2.*fentrebruit2)/sum(fentrebruit1 == 1);
+bruit1 = sum(P3.*fentrebruit3)/sum(fentrebruit1 == 1);
+
+bruit
+
+
+end
+
