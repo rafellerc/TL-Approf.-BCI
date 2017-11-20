@@ -1,8 +1,8 @@
 clear all;
 
-% addpath(genpath('\\ntelev.metz.supelec.centralesupelec.local\Users\daviet_mat\WINNT\Desktop\TLAppro\acquisition_biosemi\Enregistrements'));
-% addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\obj'));
-% addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
+addpath(genpath('\\ntelev.metz.supelec.centralesupelec.local\Users\daviet_mat\WINNT\Desktop\TLAppro\acquisition_biosemi\Enregistrements'));
+addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\obj'));
+addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
 
 % addpath(genpath('/Users/Rafael/sir/TL-Approf.-BCI/obj'));
 % addpath(genpath('/Users/Rafael/sir/'));
@@ -11,10 +11,10 @@ clear all;
 
 X = load('herve001_labeled.txt');
 
-delta_f = 1;
-G = 0.1;
+delta_f = 0.33;
+G = 0.56;
 
-[prediction] = commande(X(:,1),0.002, delta_f, G);
+[prediction] = commande(X(:,1),0.0019, delta_f, G);
 
 erreur = erreurprediction(prediction, X(:,2))
 
