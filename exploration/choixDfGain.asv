@@ -7,7 +7,8 @@
 
 % addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
-X = load('herve002_labeled.txt');
+
+X = load('herve001_labeled.txt');
 
 labels = X(:,2);
 X = X(:,1);
@@ -31,12 +32,23 @@ for i = 1:length(G)
         [Y1] = filtre (X,G(i),delta_f(j),fe,fc_1);
         [Y2] = filtre (X,G(i),delta_f(j),fe,fc_2);
         [Y3] = filtre (X,G(i),delta_f(j),fe,fc_3);
+        
+        windowSize = 36; 
+b = (1/windowSize)*ones(1,windowSize);
+a = 1;
+
+        %And passes also through the abs function so as to not have zero mean in a
+        %period
+        Z1 = filter(b,a,Z1);
+Z2 = filter(b,a,abs(Z2));
+Z3 = filter(b,a,abs(Z3));
+        
         [resultat] = SNR(Y1, Y2, Y3, labels);
         SNRmat(i,j) = resultat;
         if resultat >SNRmax
             SNRmax = resultat;
             Gopt = G(i);
-            delta_fopt = delta_f(j);
+            delta_fopt = delta_f(i);
             
         end
     end

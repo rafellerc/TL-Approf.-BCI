@@ -11,15 +11,4 @@ addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
 
 X = load('herve001_labeled.txt');
 
-delta_f = 0.33;
-G = 0.56;
-
-[prediction] = commande(X(:,1),0.0019, delta_f, G);
-
-erreur = erreurprediction(prediction, X(:,2))
-
-axe = 1/256:1/256:size(prediction)/256;
-plot(axe, prediction);
-hold on;
-plot(axe,X(:,2));
-hold on;
+Y = puissancelisse(X(:,1));

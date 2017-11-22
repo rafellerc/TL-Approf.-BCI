@@ -9,7 +9,7 @@ close all;
 % addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
 
-X = load('herve003_labeled.txt');
+X = load('herve001_labeled.txt');
 % X = X(:,1);
 fe = 256;
 fc_1 = 7.5;

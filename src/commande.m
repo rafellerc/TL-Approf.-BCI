@@ -12,7 +12,6 @@ fc_3 = 13.5;
 prediction = zeros(length(Y1),1);
 
 for i = 36:length(Y1)
-    
     est_amp_1 = max(abs(Y1(i-35:i)));
     est_amp_2 = max(abs(Y2(i-35:i)));
     est_amp_3 = max(abs(Y3(i-35:i)));
