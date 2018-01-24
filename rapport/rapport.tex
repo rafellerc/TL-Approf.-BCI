@@ -14,11 +14,11 @@
 \pagestyle{fancy}
 \fancyhead{}
 %\fancyfoot{}
-	\fancyhead[L]{Commande BCI}
+	\fancyhead[L]{Commande de robot par BCI}
 \fancyhead[R]{Rafael, Mathieu, Heloise}
 %\fancyhead[C]{\thepage}
 
-\renewcommand{\contentsname}{\huge{\textbf{Table of Contents}}}
+\renewcommand{\contentsname}{\huge{\textbf{Table des matières}}}
 
 \lstdefinestyle{DOS}
 {
@@ -37,13 +37,12 @@
 \vfill
 \line(1,0){400}\\[1mm]
 \huge{\textsc{\textbf{Rapport TL SIR Commande de robot par interface cérébrale}}}\\[3mm]
-\Large{\textbf{- Rafael ELLER CRUZ, Mathieu, Heloise -}}\\[1mm]
+\Large{\textbf{- Rafael ELLER CRUZ, Mathieu DAVIET, Heloise HUYGHUES DESPOINTES-}}\\[1mm]
 \Large{promo 2018}\\[1mm]
 \line(1,0){400}\\[1mm]
-%\Large{\textbf{Enseignant Encadrant: VIDAL Micheline}}\\[1mm]
+
 \vfill
-%\slshape{Stage chez Smart Prospective, deroulé entre le 19/07/2017 et le 15/09/2017}\\
-%\slshape{Incubateur INSEEC 51 Quai de la Seine}\\
+
 \end{center}
 \end{titlepage}
 
@@ -58,26 +57,43 @@
 %%%Introduction%%%
 \setcounter{page}{1}
 \section{Introduction}
-Put text here
+
+Lors de ses 11 séances de TL d'approfondissement, nous avons eu l'occasion de réaliser la commande du robot Khepera à partir de signaux provenant d'une interface cerveau machine (BCI). Ce projet nous a permis de mettre en pratique les connaissances que nous avons acquises lors des cours de la majeure Systèmes Interactifs et Robotiques et plus particulièrement celles des cours Modélisation et Analyse Spectrale, Robotique autonome et Programmation C++.\\
+
+\noindent Deux robots Khepera, un système d'acquisition cérébrale et des signaux pré-enregistrés ont été mis à notre disposition pour ce projet.Le robot ne sera commandé que par 4 ordres: rester immobile, tourner à droite, tourner à gauche et avancer.\\
+
+\noindent Notre travail à travers les séances et dans ce rapport est décomposé en 2 grandes étapes: l'extraction des commandes sur les signaux BCI et le contrôle du robot. Ces deux étapes sont ensuite réunies sous C++ grâce au framework ROS.
+
 
 \cleardoublepage
 
-%%%Objectifs et Contexte%%%
+%%%Extraction de la commande%%%
 
-\section{Analyse des resultats}
+\section{Extraction de la commande du robot à partir des signaux cérébraux}
 
+\subsection{Étude théorique}
 egbfoaubgoabgoabogbaojbfaobfaob
 
 \cleardoublepage
 
-%%%Démarche et travaux réalisés%%%
+\subsection{Étude pratique}
+\subsubsection{Démarche choisie pour l'extraction de commande}
+\subsubsection{Création de données labellisées}
+\subsubsection{Filtrage passe bande du signal}
+\subsubsection{Lissage du signal}
+\subsubsection{Choix de la commande}
+\subsubsection{Synthèse et résultats}
 
-\section{Methodology and performed work}
+\cleardoublepage
+
+%%%Commande du robot%%%
+
+\section{Commande du robot}
 
  	  
-\subsection{Bibliographical Research}
+\subsection{Implémentation de l'interface avec le robot}
+4 commandes possibles: avancer, tourner à droite, tourner à gauche et ne rien faire
 A footnote \footnote{https://hal.archives-ouvertes.fr/}
-%\cite{DBLP:WenG13},
 
 You can see a duck in figure \ref{fig:duck}.
 
@@ -88,51 +104,33 @@ You can see a duck in figure \ref{fig:duck}.
 \label{fig:duck}
 \end{figure}
 
+\cleardoublepage
 
-\subsubsection{Deep Learning} \label{Deep}
-
-	
-\subsubsection{Transfer Learning}
+\subsection{Adaptation de l'extraction du signal pour la commande du robots}
 
 \cleardoublepage
 
-%%%Analyse des résultats obtenus%%%
 
-\section{Analysis of the results}
-
-
-\subsection{Training new models}
-
-
-\subsection{Deploying the models and API}
+\subsection{Résultats et tests}
 
 \cleardoublepage
 
-%%%Apports%%%
 
-\section{Contributions}
-\cleardoublepage
+%%%Synthèse des résultats%%%
 
-%%%Conclusions et recommandations%%%
-
-\section{Conclusions et recommendations}
+\section{Synthèse des résultats}
 
 \cleardoublepage
 
-%%%Références bibliographiques%%%
+%%%Conclusion%%%
 
+\section{Conclusion}
 \cleardoublepage
 
-\addcontentsline{toc}{section}{\numberline{}References}
-\bibliography{bibl.bib}
-\bibliographystyle{ieeetr}
-
-\cleardoublepage
 
 %%%Annexe%%%
 
-\section*{Appendix A: Recommendations from the directors}
-\addcontentsline{toc}{section}{\numberline{}Appendix A}
+\section{Annexe}
 
 \cleardoublepage
 
