@@ -104,16 +104,11 @@ for j=1:100
     end
     end
 
-%On calcule le pourcentage d'ordres erronés donnés pour chaque seuil 
-%par la fonction erreurprediction 
+%On calcule le poircentage d'ordres erronés donnés 
 erreur(j) = erreurprediction(prediction(:,j),X(:,2));
 
 end
 
-
-
-%On choisit pour chaque signal le seuil donnant l'erreur de prédiction
-%minimale
 [val_min,ind_min] = min(erreur);
 
 seuil1 = seuil_1(ind_min);

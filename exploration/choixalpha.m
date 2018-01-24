@@ -5,7 +5,7 @@
 % addpath(genpath('/Users/Rafael/sir/TL-Approf.-BCI/obj'));
 % addpath(genpath('/Users/Rafael/sir/'));
 
-% addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
+addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
 
 X = load('herve002_labeled.txt');

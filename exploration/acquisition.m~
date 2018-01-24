@@ -42,8 +42,7 @@ a = 1;
 
 %And passes also through the abs function so as to not have zero mean in a
 %period
-%Passage à la valeur absolue pour ne pas avoir une moyenne nulle sur un
-%période
+%Passage à la valeur absolue pour ne 
 Y1 = filter(b,a,abs(Y1));
 Y2 = filter(b,a,abs(Y2));
 Y3 = filter(b,a,abs(Y3));
@@ -72,7 +71,6 @@ plot(T(idx_0),Y3(idx_0,1),'r',T(idx_1),Y3(idx_1,1),'b',T(idx_2),Y3(idx_2,1),'y',
 % plot(T(idx_0),d3(idx_0,1),'r',T(idx_1),d3(idx_1,1),'b',T(idx_2),d3(idx_2,1),'y',T(idx_3),d3(idx_3,1),'k');
 
 %Lines of reference.
-%Courbes de référence
 refline(ax1,[0 1e-3]);
 refline(ax2,[0 1e-3]);
 refline(ax3,[0 1e-3]);

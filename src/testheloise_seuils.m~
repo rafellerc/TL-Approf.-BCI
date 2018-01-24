@@ -7,10 +7,26 @@ close all
 % addpath(genpath('/Users/Rafael/sir/'));
 addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
+%Le signal B est la moyenne de la sortie des 2 électrodes
+%Le signal X contient la sortie des électrodes et les labels des ordres
+%donnés, obtenu par separerOrdres
 B = load('herve001.txt');
 X = load('herve001_labeled.txt');
 
-%Seuils trouvés par optmin_3seuils :
+%delta_f et G sont ceux trouvés par choixaplha
+fe = 256;
+fc_1 = 7.5;
+fc_2 = 11;
+fc_3 = 13.5;
+delta_f = 0.; %Opt = 0.33
+G = 0.56;  %Opt = 0.56
+len_X = size(X);
+T = (1/fe)*(0:len_X);
+alpha = 0.99;
+t = 2;
+
+% Les seuils sont ceux trouvés par optmin_3seuils 
+%pour chacun des 3 enregistrements :
 
 seuil1 = 1.8617e-08;%herve001
 seuil2 = 1.9727e-08;
@@ -24,18 +40,16 @@ seuil3 = 1.7490e-08;
 % seuil2 = 6.757e-07;
 % seuil3 = 4.108e-07;
 
-fe = 256;
-fc_1 = 7.5;
-fc_2 = 11;
-fc_3 = 13.5;
-delta_f = 0.33; %Opt = 0.33
-G = 0.56;  %Opt = 0.56
-len_X = size(X);
-T = (1/fe)*(0:len_X);
-alpha = 0.99;
-t = 3;
+
+%On calcule la prediction des commandes données dans X en fonction des
+%seuils, de delta_f, de G et de alpha
 [prediction] = commande_3seuils(X, seuil1, seuil2, seuil3 ,delta_f, G,alpha);
+
+%On calcule la prédiction corrigée : qui ne prend pas en compte un ordre
+%durant moins de t
 [prediction_ts] = commande_ts(prediction,t);
+
+%On calcule l'erreur entre la prédiction corrigée et les labels des ordres
 [erreur] = erreurprediction(prediction_ts,X(:,2));
 
 idx_0 = X(:,2)==0;
@@ -60,9 +74,6 @@ for i = 2:size(Y1,1)+1
     Z3(i) = (1-alpha)*Y3(i)^2 + alpha * Z3(i-1)^2;
 end
 
-d1 = zeros(
-for k = 1:size(Z1,1)
-d1(k) = derivee(fe,k,Z1)
 
 %filters the singal in with fcut ~ 7 Hz. To allow to get only the value
 %corresponding to the amplitude
