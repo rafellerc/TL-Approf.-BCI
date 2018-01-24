@@ -1,0 +1,63 @@
+function [prediction_ts] = commande_ts(prediction,t)
+
+prediction_ts = zeros(length(prediction) ,1);
+
+
+% for i = 1 : length(prediction)-256*t-1
+A=1;
+i=1;
+while(A < length(prediction)+1)
+    i=A;
+    if prediction(i)==prediction(i+1)
+        cpt=1;
+        m=prediction(i);
+        while (prediction(i)==prediction(i+cpt) && cpt<=256*t-1 )
+            cpt = cpt+1;
+        end
+        A=A+cpt;
+        if cpt == 256*t+1
+            m =prediction(i);
+            for n =i:i+cpt-1
+                prediction_ts(n) = prediction(i);
+            end
+        else
+            for n = i : i+cpt-1
+            prediction_ts(n) = m;
+            end
+        end
+        
+    else 
+        it=2;
+        while (prediction(i+1)==prediction(i+it))
+            it=it+1;
+        end
+        A=A+it;
+        if it < 256*t-2
+            for n =i:i+it-2
+                prediction_ts(n)=prediction(i);
+            end
+        else
+            for n =i:i+it-2
+                prediction_ts(n)=prediction(i+1);
+            end
+        end
+   end
+end
+
+    
+    
+    
+    
+%     if cpt >= 256*t
+%         cpt2=cpt;
+%         m =prediction(i);
+%         prediction_ts(i) = prediction(i);
+%     else
+%         for n = i : i+cpt2
+%             prediction_ts(n) = m;
+%         end
+%     end
+%     cpt=0;
+end
+
+    
