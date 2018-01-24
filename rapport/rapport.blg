@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 This is BibTeX, Version 0.99d (Web2C 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: rapport.aux
+=======
+This is BibTeX, Version 0.99dThe top-level auxiliary file: rapport.aux
+>>>>>>> 4cc3e13cb5630d3883586fb5f39073afd3bd9365
 I couldn't open database file bibl.bib.bib
 ---line 16 of file rapport.aux
  : \bibdata{bibl.bib
@@ -9,6 +13,7 @@ I'm skipping whatever remains of this command
 The style file: ieeetr.bst
 I found no \citation commands---while reading file rapport.aux
 I found no database files---while reading file rapport.aux
+<<<<<<< HEAD
 You've used 0 entries,
             1876 wiz_defined-function locations,
             477 strings with 3472 characters,
@@ -50,4 +55,6 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
+=======
+>>>>>>> 4cc3e13cb5630d3883586fb5f39073afd3bd9365
 (There were 3 error messages)

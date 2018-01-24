@@ -1,12 +1,12 @@
 close all;
-addpath(genpath('\\ntelev.metz.supelec.centralesupelec.local\Users\daviet_mat\WINNT\Desktop\TLAppro\acquisition_biosemi\Enregistrements'));
-addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\obj'));
-addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
+% addpath(genpath('\\ntelev.metz.supelec.centralesupelec.local\Users\daviet_mat\WINNT\Desktop\TLAppro\acquisition_biosemi\Enregistrements'));
+% addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\obj'));
+% addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
+% 
+% % addpath(genpath('/Users/Rafael/sir/TL-Approf.-BCI/obj'));
+% % addpath(genpath('/Users/Rafael/sir/'));
 
-% addpath(genpath('/Users/Rafael/sir/TL-Approf.-BCI/obj'));
-% addpath(genpath('/Users/Rafael/sir/'));
-
-% addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
+addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
 
 X = load('herve003_labeled.txt');
@@ -56,12 +56,6 @@ a = 1;
 Z1 = filter(b,a,Z1);
 Z2 = filter(b,a,abs(Z2));
 Z3 = filter(b,a,abs(Z3));
-
-k =10;
-[d1_puissance] = derivee(fe,k,Z1);
-[d2_puissance] = derivee(fe,k,Z2);
-[d3_puissance] = derivee(fe,k,Z3);
-
 
 ax1 = subplot(3,1,1);
 % figure

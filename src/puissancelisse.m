@@ -40,7 +40,7 @@ a = 1;
 %And passes also through the abs function so as to not have zero mean in a
 %period
             
-Z1 = filter(b,a,Z1);
+Z1 = filter(b,a,abs(Z1));
 Z2 = filter(b,a,abs(Z2));
 Z3 = filter(b,a,abs(Z3));
 
