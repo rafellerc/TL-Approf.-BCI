@@ -57,12 +57,6 @@ Z1 = filter(b,a,Z1);
 Z2 = filter(b,a,abs(Z2));
 Z3 = filter(b,a,abs(Z3));
 
-k =10;
-[d1_puissance] = derivee(fe,k,Z1);
-[d2_puissance] = derivee(fe,k,Z2);
-[d3_puissance] = derivee(fe,k,Z3);
-
-
 ax1 = subplot(3,1,1);
 % figure
 plot(T(idx_0),Z1(idx_0,1)','r',T(idx_1),Z1(idx_1,1)','b',T(idx_2),Z1(idx_2,1)','y',T(idx_3),Z1(idx_3,1),'k')';
