@@ -39,7 +39,11 @@ Y3 = filtre(X[:,0],G,delta_f,fe,fc_3);
 # b = (1/windowSize)*ones(1,windowSize);
 # a = 1;
 
+plt.figure(1)
 plt.plot(T[idx_0],Y1[idx_0],'r',T[idx_1],Y1[idx_1],'b',T[idx_2],Y1[idx_2],'y',T[idx_3],Y1[idx_3],'k');
+plt.grid(True)
 
+plt.figure(2)
+plt.plot(T[idx_0],Y2[idx_0],'r',T[idx_1],Y2[idx_1],'b',T[idx_2],Y2[idx_2],'y',T[idx_3],Y2[idx_3],'k');
 plt.grid(True)
 plt.show()
