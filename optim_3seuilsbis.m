@@ -21,7 +21,7 @@ delta_f = 0.33; %Opt = 0.33
 G = 0.56;  %Opt = 0.56
 len_X = size(X);
 T = (1/fe)*(0:len_X);
-alpha = 0.5;
+alpha = 0.65;
 
 [Y1] = filtre (X,G,delta_f,fe,fc_1);
 [Y2] = filtre (X,G,delta_f,fe,fc_2);
@@ -35,14 +35,14 @@ Z3 = zeros(size(Y3,1),1);
 Z3(1) = Y3(1,1)^2;
 
 for i = 2:size(Y1,1)+1
-    Z1(i) = (1-alpha)*Y1(i)^2 + alpha * Z1(i-1)^2;
-    Z2(i) = (1-alpha)*Y2(i)^2 + alpha * Z2(i-1)^2;
-    Z3(i) = (1-alpha)*Y3(i)^2 + alpha * Z3(i-1)^2;
+    Z1(i) = (1-alpha)*Y1(i)^2 + alpha * Z1(i-1);
+    Z2(i) = (1-alpha)*Y2(i)^2 + alpha * Z2(i-1);
+    Z3(i) = (1-alpha)*Y3(i)^2 + alpha * Z3(i-1);
 end
 
 %filters the singal in with fcut ~ 7 Hz. To allow to get only the value
 %corresponding to the amplitude
-windowSize = 36; 
+windowSize = 36;
 b = (1/windowSize)*ones(1,windowSize);
 a = 1;
 
@@ -76,40 +76,46 @@ for i = 1:10
     seuil(i,1)=seuil_1(i);
     seuil(i,2)=seuil_2(i);
     seuil(i,3)=seuil_3(i);
-
+    
 end
 
 prediction = zeros(length(Z1)-1,10);
 
 for j=1:10
     for k = 1:10
-            for l = 1:10
-        for i = 36:length(Z1)-1
-    
-    est_amp_1 = max(abs(Z1(i-35:i)));
-    est_amp_2 = max(abs(Z2(i-35:i)));
-    est_amp_3 = max(abs(Z3(i-35:i)));
-    
-    if(est_amp_1<seuil(j,1) && est_amp_2<seuil(k,2) && est_amp_3<seuil(l,3))
-        prediction(i,j) = 0;
-    elseif((est_amp_1>est_amp_2 && est_amp_1>est_amp_3)||(est_amp_1>seuil(j,1) && est_amp_2<seuil(k,2) && est_amp_3<seuil(l,3)))
-        prediction(i,j) = 3;
-    elseif((est_amp_2>est_amp_1 && est_amp_2>est_amp_3)|| (est_amp_2>seuil(k,2) && est_amp_1<seuil(j,1) && est_amp_3<seuil(l,3)))
-        prediction(i,j) = 1;
-    elseif ((est_amp_3>est_amp_1 && est_amp_3>est_amp_2)||(est_amp_3>seuil(l,3) && est_amp_1<seuil(j,1) && est_amp_2<seuil(k,2)))
-        prediction(i,j) = 2;
-    else 
-        prediction(i,j) = 0;
-    end
-        end
-        
+        for l = 1:10
+            for i = 36:length(Z1)-1
+                
+                est_amp_1 = max(abs(Z1(i-35:i)))/seuil(j,1);
+                est_amp_2 = max(abs(Z2(i-35:i)))/seuil(k,2);
+                est_amp_3 = max(abs(Z3(i-35:i)))/seuil(l,3);
+                
+                if(est_amp_1<1 && est_amp_2<1 && est_amp_3<1)
+                    prediction(i,j) = 0;
+                elseif(est_amp_1 > est_amp_2 && est_amp_1 > est_amp_3)
+                    prediction(i,j) = 3;
+                elseif(est_amp_2 > est_amp_1 && est_amp_2 > est_amp_3)
+                    prediction(i,j) = 1;
+                elseif(est_amp_3 > est_amp_1 && est_amp_3 > est_amp_2)
+                    prediction(i,j) = 2;
+                    %     elseif((est_amp_1>est_amp_2 && est_amp_1>est_amp_3)||(est_amp_1>seuil(j,1) && est_amp_2<seuil(k,2) && est_amp_3<seuil(l,3)))
+                    %         prediction(i,j) = 3;
+                    %     elseif((est_amp_2>est_amp_1 && est_amp_2>est_amp_3)|| (est_amp_2>seuil(k,2) && est_amp_1<seuil(j,1) && est_amp_3<seuil(l,3)))
+                    %         prediction(i,j) = 1;
+                    %     elseif ((est_amp_3>est_amp_1 && est_amp_3>est_amp_2)||(est_amp_3>seuil(l,3) && est_amp_1<seuil(j,1) && est_amp_2<seuil(k,2)))
+                    %         prediction(i,j) = 2;
+                    %     else
+                    %         prediction(i,j) = 0;
+                end
             end
+            
+        end
     end
-%    prediction_1(:,i) = commande(X,seuil_1(i),delta_f, G);
-%    prediction_2(:,i) = commande(X,seuil_2(i),delta_f, G);
-%    prediction_3(:,i) = commande(X,seuil_3(i),delta_f, G);
-erreur(j) = erreurprediction(prediction(:,j),H(:,2));
-
+    %    prediction_1(:,i) = commande(X,seuil_1(i),delta_f, G);
+    %    prediction_2(:,i) = commande(X,seuil_2(i),delta_f, G);
+    %    prediction_3(:,i) = commande(X,seuil_3(i),delta_f, G);
+    erreur(j) = erreurprediction(prediction(:,j),H(:,2));
+    
 end
 
 [val_min,ind_min] = min(erreur);

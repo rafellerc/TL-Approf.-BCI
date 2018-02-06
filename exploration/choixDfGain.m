@@ -8,7 +8,7 @@
  addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
 
-X = load('herve001_labeled.txt');
+X = load('herve002_labeled.txt');
 
 labels = X(:,2);
 X = X(:,1);

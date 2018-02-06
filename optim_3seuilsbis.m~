@@ -9,8 +9,8 @@ close all
 addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
 
-B = load('herve002.txt');
-X = load('herve002_labeled.txt');
+X = load('herve002.txt');
+H = load('herve002_labeled.txt');
 
 % X = X(:,1);
 fe = 256;
@@ -21,7 +21,7 @@ delta_f = 0.33; %Opt = 0.33
 G = 0.56;  %Opt = 0.56
 len_X = size(X);
 T = (1/fe)*(0:len_X);
-alpha = 0.9350;
+alpha = 0.99;
 
 [Y1] = filtre (X,G,delta_f,fe,fc_1);
 [Y2] = filtre (X,G,delta_f,fe,fc_2);
@@ -63,57 +63,61 @@ bruit_3 = sum(Z3(1:5*256))/(5*256);
 max_Z1 = max(abs(Z1));
 max_Z2 = max(abs(Z2));
 max_Z3 = max(abs(Z3));
-seuil_1 = zeros(100,1);
-seuil_2 = zeros(100,1);
-seuil_3 = zeros(100,1);
-seuil = zeros(100,3);
+seuil_1 = zeros(10,1);
+seuil_2 = zeros(10,1);
+seuil_3 = zeros(10,1);
+seuil = zeros(10,3);
 
-%On incrémente les seuils de 1/100*(l'amplitude max. du signal) pour
-%trouver les seuils optimaux
-for i = 1:100
-    seuil_1(i)=bruit_1+((max_Z1/100)*(i-1));
-    seuil_2(i)=bruit_2+((max_Z2/100)*(i-1));
-    seuil_3(i)=bruit_3+((max_Z3/100)*(i-1));
+
+for i = 1:10
+    seuil_1(i)=bruit_1+((max_Z1/10)*(i-1));
+    seuil_2(i)=bruit_2+((max_Z2/10)*(i-1));
+    seuil_3(i)=bruit_3+((max_Z3/10)*(i-1));
     seuil(i,1)=seuil_1(i);
     seuil(i,2)=seuil_2(i);
     seuil(i,3)=seuil_3(i);
 
 end
 
-prediction = zeros(length(Z1)-1,100);
+prediction = zeros(length(Z1)-1,10);
 
-
-%On calcule la prédiction correspondante sur chaque fenêtre de temps, pour
-%chaque signal et pour chaque incrémentation des seuils
-for j=1:100
+for j=1:10
+    for k = 1:10
+            for l = 1:10
+        for i = 36:length(Z1)-1
     
-    for i = 36:length(Z1)-1
+    est_amp_1 = max(abs(Z1(i-35:i)))/seuil(j,1);
+    est_amp_2 = max(abs(Z2(i-35:i)))/seuil(k,2);
+    est_amp_3 = max(abs(Z3(i-35:i)))/seuil(l,3);
     
-    est_amp_1 = max(abs(Z1(i-35:i)));
-    est_amp_2 = max(abs(Z2(i-35:i)));
-    est_amp_3 = max(abs(Z3(i-35:i)));
-    
-    if(est_amp_1<seuil(j,1) && est_amp_2<seuil(j,2) && est_amp_3<seuil(j,3))
+    if(est_amp_1<1 && est_amp_2<1 && est_amp_3<1)
         prediction(i,j) = 0;
-    elseif((est_amp_1>est_amp_2 && est_amp_1>est_amp_3) ||  (est_amp_1>seuil(j,1))) %&& est_amp_2<seuil(j,2) && est_amp_3<seuil(j,3)))
+    elseif(est_amp_1 > est_amp_2 && est_amp_1 > est_amp_3)
         prediction(i,j) = 3;
-    elseif((est_amp_2>est_amp_1 && est_amp_2>est_amp_3) || (est_amp_2>seuil(j,2) )) %&& est_amp_1<seuil(j,1) && est_amp_3<seuil(j,3)))
+    elseif(est_amp_2 > est_amp_1 && est_amp_2 > est_amp_3)
         prediction(i,j) = 1;
-    elseif ((est_amp_3>est_amp_1 && est_amp_3>est_amp_2)  || ( est_amp_3>seuil(j,3))) %&& est_amp_1<seuil(j,1) && est_amp_2<seuil(j,2)))
+    elseif(est_amp_3 > est_amp_1 && est_amp_3 > est_amp_2)
         prediction(i,j) = 2;
+%     elseif((est_amp_1>est_amp_2 && est_amp_1>est_amp_3)||(est_amp_1>seuil(j,1) && est_amp_2<seuil(k,2) && est_amp_3<seuil(l,3)))
+%         prediction(i,j) = 3;
+%     elseif((est_amp_2>est_amp_1 && est_amp_2>est_amp_3)|| (est_amp_2>seuil(k,2) && est_amp_1<seuil(j,1) && est_amp_3<seuil(l,3)))
+%         prediction(i,j) = 1;
+%     elseif ((est_amp_3>est_amp_1 && est_amp_3>est_amp_2)||(est_amp_3>seuil(l,3) && est_amp_1<seuil(j,1) && est_amp_2<seuil(k,2)))
+%         prediction(i,j) = 2;
+%     else 
+%         prediction(i,j) = 0;
     end
+        end
+        
+            end
     end
-
-%On calcule le pourcentage d'ordres erronés donnés pour chaque seuil 
-%par la fonction erreurprediction 
-erreur(j) = erreurprediction(prediction(:,j),X(:,2));
+%    prediction_1(:,i) = commande(X,seuil_1(i),delta_f, G);
+%    prediction_2(:,i) = commande(X,seuil_2(i),delta_f, G);
+%    prediction_3(:,i) = commande(X,seuil_3(i),delta_f, G);
+erreur(j) = erreurprediction(prediction(:,j),H(:,2));
 
 end
 
-
-
-%On choisit pour chaque signal le seuil donnant l'erreur de prédiction
-%minimale
 [val_min,ind_min] = min(erreur);
 
 seuil1 = seuil_1(ind_min);
