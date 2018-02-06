@@ -5,7 +5,7 @@
 % addpath(genpath('/Users/Rafael/sir/TL-Approf.-BCI/obj'));
 % addpath(genpath('/Users/Rafael/sir/'));
 
-% addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
+ addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
 
 X = load('herve001_labeled.txt');
@@ -18,8 +18,8 @@ fc_2 = 11;
 fc_3 = 13.5;
 
 
-G = 0.01:0.01:5;
-delta_f = 0.01:0.01:3;
+G = 0.01:0.01:1;
+delta_f = 0.01:0.01:1;
 
 SNRmat = zeros (length(G), length(delta_f));
 

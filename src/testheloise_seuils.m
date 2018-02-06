@@ -13,7 +13,7 @@ addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 B = load('herve001.txt');
 X = load('herve001_labeled.txt');
 
-%delta_f et G sont ceux trouvés par choixaplha
+%delta_f, G et alpha sont ceux trouvés par choixaplha
 fe = 256;
 fc_1 = 7.5;
 fc_2 = 11;
@@ -79,35 +79,38 @@ for i = 2:size(Y1,1)+1
 end
 
 
-%filters the singal in with fcut ~ 7 Hz. To allow to get only the value
+%filters the signal in with fcut ~ 7 Hz. To allow to get only the value
 %corresponding to the amplitude
-% windowSize = 36; 
-% b = (1/windowSize)*ones(1,windowSize);
-% a = 1;
-% 
-%%And passes also through the abs function so as to not have zero mean in a
-%%period
-% Z1 = filter(b,a,abs(Z1));
-% Z2 = filter(b,a,abs(Z2));
-% Z3 = filter(b,a,abs(Z3));
+windowSize = 36; 
+b = (1/windowSize)*ones(1,windowSize);
+a = 1;
 
-% % ax1 = subplot(3,1,1);
+%And passes also through the abs function so as to not have zero mean in a
+%period
+Z1 = filter(b,a,abs(Z1));
+Z2 = filter(b,a,abs(Z2));
+Z3 = filter(b,a,abs(Z3));
+
+
+[resultat] = SNR(Y1, Y2, Y3,X(:,2))
+plot (resultat);
+ax1 = subplot(3,1,1);
+figure
+plot(Z1);
+ plot(T(idx_0),Z1(idx_0,1)','r',T(idx_1),Z1(idx_1,1)','b',T(idx_2),Z1(idx_2,1)','y',T(idx_3),Z1(idx_3,1),'k')';
+hold on;
+plot(Z2);
+
+hold on;
+plot(Z3);
+ax2 = subplot(3,1,2);
 % figure
-% %plot(Z1);
-%  plot(T(idx_0),Z1(idx_0,1)','r',T(idx_1),Z1(idx_1,1)','b',T(idx_2),Z1(idx_2,1)','y',T(idx_3),Z1(idx_3,1),'k')';
-% hold on;
-% %plot(Z2);
+ plot(T(idx_0),Z2(idx_0,1),'r',T(idx_1),Z2(idx_1,1),'b',T(idx_2),Z2(idx_2,1),'y',T(idx_3),Z2(idx_3,1),'k');
+ax3 = subplot(3,1,3);
+% figure
+plot(T(idx_0),Z3(idx_0,1),'r',T(idx_1),Z3(idx_1,1),'b',T(idx_2),Z3(idx_2,1),'y',T(idx_3),Z3(idx_3,1),'k');
 
-%hold on;
-%plot(Z3);
-% ax2 = subplot(3,1,2);
-% % figure
- %plot(T(idx_0),Z2(idx_0,1),'r',T(idx_1),Z2(idx_1,1),'b',T(idx_2),Z2(idx_2,1),'y',T(idx_3),Z2(idx_3,1),'k');
-% ax3 = subplot(3,1,3);
-% % figure
-% plot(T(idx_0),Z3(idx_0,1),'r',T(idx_1),Z3(idx_1,1),'b',T(idx_2),Z3(idx_2,1),'y',T(idx_3),Z3(idx_3,1),'k');
-% 
 % %Lines of reference.
-%  refline(ax1,[0 seuil1]);
-%  refline(ax2,[0 seuil2]);
-%  refline(ax3,[0 seuil3]);
+ refline(ax1,[0 seuil1]);
+ refline(ax2,[0 seuil2]);
+ refline(ax3,[0 seuil3]);

@@ -18,8 +18,10 @@ fc_2 = 11;
 fc_3 = 13.5;
 
 
-G = 0.01:0.01:1;
-delta_f = 0.01:0.01:1;
+%G = 0.01:0.01:1;
+%delta_f = 0.01:0.01:1;
+G = 0.56;
+delta_f = 0.33;
 alpha = 0.01:0.01:1;
 
 SNRmat = zeros (length(G), length(delta_f), length(alpha));

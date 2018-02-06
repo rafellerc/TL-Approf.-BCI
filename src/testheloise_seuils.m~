@@ -13,24 +13,28 @@ addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 B = load('herve001.txt');
 X = load('herve001_labeled.txt');
 
-%delta_f et G sont ceux trouvés par choixaplha
+%delta_f, G et alpha sont ceux trouvés par choixaplha
 fe = 256;
 fc_1 = 7.5;
 fc_2 = 11;
 fc_3 = 13.5;
-delta_f = 0.; %Opt = 0.33
-G = 0.56;  %Opt = 0.56
+delta_f = 0.94; %Opt = 0.33
+G = 0.17;  %Opt = 0.56
 len_X = size(X);
 T = (1/fe)*(0:len_X);
-alpha = 0.99;
+alpha = 0.5;
 t = 2;
 
 % Les seuils sont ceux trouvés par optmin_3seuils 
 %pour chacun des 3 enregistrements :
 
-seuil1 = 1.8617e-08;%herve001
-seuil2 = 1.9727e-08;
-seuil3 = 1.7490e-08;
+seuil1 = 9.05e-07;%herve001
+seuil2 = 9.6e-07;
+seuil3 = 8.61e-07;
+% 
+% seuil1 = 1.8617e-08;%herve001
+% seuil2 = 1.9727e-08;
+% seuil3 = 1.7490e-08;
 
 % seuil1= 1.1533e-06; %herve002
 % seuil2 = 6.767e-07;
@@ -43,6 +47,7 @@ seuil3 = 1.7490e-08;
 
 %On calcule la prediction des commandes données dans X en fonction des
 %seuils, de delta_f, de G et de alpha
+[resultat] = SNR(
 [prediction] = commande_3seuils(X, seuil1, seuil2, seuil3 ,delta_f, G,alpha);
 
 %On calcule la prédiction corrigée : qui ne prend pas en compte un ordre
