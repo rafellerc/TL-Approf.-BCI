@@ -96,9 +96,32 @@ Ensuite, les signaux enregistrés ne possèdent que les valeurs du capteur en fo
 	\label{fig:duck}
 \end{figure}
 
-
 \cleardoublepage
 
+
+\subsection{Architecture globale de la solution choisie}
+
+Comme on peut le constater sur la figure 1, le signal a besoin d'être traité pour pouvoir être exploité par la suite. La première étape va consister à extraire du signal de départ 3 signaux autour des fréquences qui nous intéresse à savoir 7.5 Hz, 11Hz et 13.5Hz. Pour effectuer cela nous utilisons 3 filtres passe-bande dont les paramètres sont la bande passante: $\Delta$ f, le gain: G et la fréquence centrale: fc. La fréquence centrale correspond respectivement à 7.5Hz, 11Hz et 13.5Hz pour chacun des 3 filtres. Nous verrons par la suite le moyen par lequel on a optimisé les autres paramètres. Comme le montre la figure 3 ci-dessous, nous pouvons constater que ce premier filtre nous permet déjà de distinguer les ordres donnés par l'expérimentateur via la BCI.
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.75]{images/Sigauxfiltreslables.jpg}
+	\caption{Trois signaux en sortie du filtre passe bande centrés repectivement en 7.5Hz, 11Hz et 13.5Hz}
+	\label{fig:duck}
+\end{figure}
+
+Malgré que le fait que l'on arrive à distinguer à l'œil nu les ordres à partir des 3 signaux en sortie des filtres passe-bande, il est nécessaire d'obtenir des signaux plus propres pour par la suite formaliser un processus de décision concernant la commande du robot. Pour cela nous allons calculé la puissance lissée de chacun des 3 signaux. L'effet de lissage permet de réduire le bruit mais cela augmente l'inertie et diminue la résolution. Cet effet de lissage dispose d'un paramètre $ \alpha $ dont nous justifierons le choix par la suite.
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.75]{images/puissancelissee.jpg}
+	\caption{Trois signaux en sortie du filtre passe bande centrés repectivement en 7.5Hz, 11Hz et 13.5Hz}
+	\label{fig:duck}
+\end{figure}
+
+
+
+
+
+\cleardoublepage
 \subsection{Étude pratique}
 \subsubsection{Démarche choisie pour l'extraction de commande}
 \subsubsection{Création de données labellisées}
