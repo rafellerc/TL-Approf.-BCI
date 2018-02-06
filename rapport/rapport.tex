@@ -71,9 +71,30 @@ Lors de ses 11 séances de TL d'approfondissement, nous avons eu l'occasion de r
 
 \section{Extraction de la commande du robot à partir des signaux cérébraux}
 
-\subsection{Étude théorique}
-egbfoaubgoabgoabogbaojbfaobfaob
+\subsection{Le signal d'entrée}
 
+Le signal de commande que l'on va être amené à analyser en entrée du système correspond au signal en sortie  de la BCI. Dans le cadre de ce TL, 3 signaux ont été enregistrés à une fréquence de 256Hz et peuvent être rejoués à volonté. Pour chaque période de temps, les signaux enregistrés possèdent deux valeurs correspondant aux deux canaux du capteurs. Nous aurions pu effectuer nos propres enregistrements à l'aide d'un capteur BIOSEMI à 2048Hz mais par manque de temps, nous nous sommes concentrés sur les signaux déjà enregistrés. \\
+
+Le signal en sortie de la BCI est influencé par trois plaques clignotant respectivement autour de 7.5Hz, 11Hz et 13.5Hz. Lorsque l'expérimentateur regarde l'une des plaques à une fréquence donnée, cette fréquence se répercute dans l'émission de ses signaux cérébraux et se retrouve dans le signal récupéré par la BCI. Chacune de ces plaques clignotantes correspond à un ordre particulier. L'expérimentateur doit regarder la plaque clignotant à 7.5Hz si il veut que le robot tourne à gauche, celle clignotant à 11Hz si il veut que le robot avance, celle clignotant à 13.5Hz si il veut que le robot tourne à droite et ne regarder aucune plaque si il veut que le robot s'arrête.
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.25]{images/signalBCIinit.jpg}
+	\caption{Signal brut en sortie de la BCI enregistré}
+	\label{fig:duck}
+\end{figure}
+
+Pour faciliter l'exploitation des résultats nous avons appliqué deux modifications aux signaux enregistrés. \\
+
+Tout d'abord, les signaux enregistrés sont bi-canaux. Ainsi, pour qu'ils soient plus faciles à manipuler par la suite, nous les avons transformé en signaux mono-canal correspondant à la moyenne des deux canaux. \\
+
+
+Ensuite, les signaux enregistrés ne possèdent que les valeurs du capteur en fonction du temps, les labels indiquant quels ordre ont été donné dans le temps ne sont disponibles que de manière écrite dans le sujet. Pour faciliter la modélisation et l'optimisation de la commande de robot, nous avons ajouté une deuxième colonne au signaux mono-canal enregistrés correspondant à l'ordre attendu en fonction du temps. Pour ce faire, nous avons associé un nombre à chaque ordre: 0 pour l'ordre ne rien faire, 1 pour l'ordre d'avancer, 2 pour l'ordre de tourner à droite et 3 pour l'ordre de tourner à gauche. L'ajout du label automatiquement nous permettra par la suite de créer des scores pour évaluer l'efficacité du traitement du signal que nous effectuerons.
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.35]{images/signalBCIlabele.jpg}
+	\caption{Signal brut monocanal labellisé}
+	\label{fig:duck}
+\end{figure}
 
 
 \cleardoublepage
@@ -146,7 +167,6 @@ You can see a duck in figure \ref{fig:duck}.
 
 %%%Annexe%%%
 
-<<<<<<< HEAD
 \section{Annexe}
 
 
