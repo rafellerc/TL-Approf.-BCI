@@ -87,7 +87,15 @@ Pour faciliter l'exploitation des résultats nous avons appliqué deux modificat
 
 Tout d'abord, les signaux enregistrés sont bi-canaux. Ainsi, pour qu'ils soient plus faciles à manipuler par la suite, nous les avons transformé en signaux mono-canal correspondant à la moyenne des deux canaux. \\
 
-Ensuite, les signaux enregistrés ne possèdent que les valeurs du capteur en fonction du temps, les labels indiquant quels ordre ont été donné dans le temps ne sont disponibles que de manière écrite dans le sujet. Pour faciliter la modélisation et l'optimisation de la commande de robot, nous avons ajouté une deuxième colonne au signaux mono-canal enregistrés correspondant à l'ordre attendu en fonction du temps.
+
+Ensuite, les signaux enregistrés ne possèdent que les valeurs du capteur en fonction du temps, les labels indiquant quels ordre ont été donné dans le temps ne sont disponibles que de manière écrite dans le sujet. Pour faciliter la modélisation et l'optimisation de la commande de robot, nous avons ajouté une deuxième colonne au signaux mono-canal enregistrés correspondant à l'ordre attendu en fonction du temps. Pour ce faire, nous avons associé un nombre à chaque ordre: 0 pour l'ordre ne rien faire, 1 pour l'ordre d'avancer, 2 pour l'ordre de tourner à droite et 3 pour l'ordre de tourner à gauche. L'ajout du label automatiquement nous permettra par la suite de créer des scores pour évaluer l'efficacité du traitement du signal que nous effectuerons.
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.35]{images/signalBCIlabele.jpg}
+	\caption{Signal brut monocanal labellisé}
+	\label{fig:duck}
+\end{figure}
+
 
 \cleardoublepage
 
