@@ -3,9 +3,7 @@ import rospy
 from std_msgs.msg import Float64
 from geometry_msgs.msg import Twist
 import numpy as np
-from scipy.ndimage.interpolation import shift
 import sys
-from socket import gethostbyname
 
 class Signal_processer(object):
 
@@ -127,9 +125,6 @@ class Signal_processer(object):
         """Applies a smoothing power estimation for each of the 3 filtered signals
         to get the power content in each frequency.
         """
-        #TODO Check if the Matlab program was using z or z^2
-        #URGENT: As Mathieu noticed, the second element shouldn't be squared, since it
-        #is already a squared z
         for j in [0,1,2]:
             self.buffer_z[j,self.i] = (1-self.alpha)*(self.y[j,0])**2 + self.alpha*(self.buffer_z[j,(self.i-1)%self.N])
 
