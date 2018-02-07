@@ -10,9 +10,9 @@ fenetrebruit2 = (labels ~= 1);
 fenetrebruit3 = (labels ~= 2);
 
 
-P1 = Y1.^2;
-P2 = Y2.^2;
-P3 = Y3.^2;
+P1 = Y1;
+P2 = Y2;
+P3 = Y3;
 
 signal1 = sum(P1.*fenetresignal1)/sum(fenetresignal1 == 1);
 signal2 = sum(P2.*fenetresignal2)/sum(fenetresignal2 == 1);

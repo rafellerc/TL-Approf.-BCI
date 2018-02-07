@@ -5,10 +5,10 @@
 % addpath(genpath('/Users/Rafael/sir/TL-Approf.-BCI/obj'));
 % addpath(genpath('/Users/Rafael/sir/'));
 
-% addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
+ addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
-%Chargement des données
-X = load('herve001_labeled.txt');
+X = load('herve002_labeled.txt');
+
 
 %Variables
 labels = X(:,2);
@@ -18,10 +18,11 @@ fc_1 = 7.5;
 fc_2 = 11;
 fc_3 = 13.5;
 
-%Choix du range et de la précision pour le choix des G et demta_f optimaux
+%Choix du range et de la précision pour le choix des G et delta_f optimaux
 
-G = 0.1:0.1:5;
-delta_f = 0.1:0.1:3;
+G = 0.01:0.01:1;
+delta_f = 0.01:0.01:1;
+
 
 % Matrice qui va recevoir tous les Rapport signal sur bruit pour chaque G
 % et delta_f

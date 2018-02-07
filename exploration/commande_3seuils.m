@@ -58,19 +58,19 @@ bruit_3 = sum(Z3(1:5*256))/(5*256);
 
 for i = 36:length(Y1)
     
-    est_amp_1 = max(abs(Z1(i-35:i)));
-    est_amp_2 = max(abs(Z2(i-35:i)));
-    est_amp_3 = max(abs(Z3(i-35:i)));    
+    est_amp_1 = max(abs(Z1(i-35:i)))/seuil_1;
+    est_amp_2 = max(abs(Z2(i-35:i)))/seuil_2;
+    est_amp_3 = max(abs(Z3(i-35:i)))/seuil_3;    
     
     %On calcule la prédiction correspondante sur chaque fenêtre de temps, pour
     %chaque signal et pour les seuils déterminés par optim_3seuils
-    if(est_amp_1<seuil_1 && est_amp_2<seuil_2 && est_amp_3<seuil_3)
+    if(est_amp_1<1 && est_amp_2<1 && est_amp_3<1)
         prediction(i) = 0;
-    elseif((est_amp_1>est_amp_2 && est_amp_1>est_amp_3) || (est_amp_1>seuil_1)) % && est_amp_2<seuil_2 && est_amp_3<seuil_3)
+    elseif(est_amp_1 > est_amp_2 && est_amp_1 > est_amp_3)
         prediction(i) = 3;
-    elseif((est_amp_2>est_amp_1 && est_amp_2>est_amp_3) || (est_amp_2>seuil_2)) %&& est_amp_1<seuil_1 && est_amp_3<seuil_3)
+    elseif(est_amp_2 > est_amp_1 && est_amp_2 > est_amp_3)
         prediction(i) = 1;
-    elseif ((est_amp_3>est_amp_1 && est_amp_3>est_amp_2) || (est_amp_3>seuil_3)) %&& est_amp_1<seuil_1 && est_amp_2<seuil_2)
+    elseif(est_amp_3 > est_amp_2 && est_amp_3 > est_amp_1)
         prediction(i) = 2;
     end
 end

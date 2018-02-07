@@ -9,8 +9,8 @@ close all
 addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
 
-B = load('herve001.txt');
-X = load('herve001_labeled.txt');
+B = load('herve002.txt');
+X = load('herve002_labeled.txt');
 
 % X = X(:,1);
 fe = 256;
@@ -21,7 +21,7 @@ delta_f = 0.33; %Opt = 0.33
 G = 0.56;  %Opt = 0.56
 len_X = size(X);
 T = (1/fe)*(0:len_X);
-alpha = 0.99;
+alpha = 0.9350;
 
 [Y1] = filtre (X,G,delta_f,fe,fc_1);
 [Y2] = filtre (X,G,delta_f,fe,fc_2);

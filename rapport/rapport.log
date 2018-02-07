@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.5)  7 FEB 2018 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.2.5)  7 FEB 2018 13:03
 entering extended mode
 **./rapport.tex
 (rapport.tex
@@ -642,14 +642,7 @@ Package pdftex.def Info: CentraleSupelec.jpeg  used on input line 36.
  [1
 
 {C:/Users/Utilisateur/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Cen
-traleSupelec.jpeg>] (rapport.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
-)
+traleSupelec.jpeg>] (rapport.toc)
 \tf@toc=\write3
 \openout3 = `rapport.toc'.
 
@@ -676,7 +669,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<images/signalBCIinit.jpg, id=18, 1927.2pt x 967.615pt>
+<images/signalBCIinit.jpg, id=17, 1927.2pt x 967.615pt>
 File: images/signalBCIinit.jpg Graphic file (type jpg)
 <use images/signalBCIinit.jpg>
 Package pdftex.def Info: images/signalBCIinit.jpg  used on input line 81.
@@ -705,7 +698,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
  <./images/signalBCIinit.jpg>]
-<images/signalBCIlabele.jpg, id=23, 1371.1225pt x 654.445pt>
+<images/signalBCIlabele.jpg, id=22, 1371.1225pt x 654.445pt>
 File: images/signalBCIlabele.jpg Graphic file (type jpg)
 <use images/signalBCIlabele.jpg>
 Package pdftex.def Info: images/signalBCIlabele.jpg  used on input line 94.
@@ -722,7 +715,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3 <./images/signalBCIlabele.jpg>]
-<images/Sigauxfiltreslables.jpg, id=27, 689.4558pt x 368.577pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 104.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 104.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 104.
+<images/Sigauxfiltreslables.jpg, id=26, 689.4558pt x 368.577pt>
 File: images/Sigauxfiltreslables.jpg Graphic file (type jpg)
 <use images/Sigauxfiltreslables.jpg>
 Package pdftex.def Info: images/Sigauxfiltreslables.jpg  used on input line 107
@@ -738,7 +737,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-<images/puissancelissee.jpg, id=28, 669.2202pt x 366.6498pt>
+<images/puissancelissee.jpg, id=27, 669.2202pt x 366.6498pt>
 File: images/puissancelissee.jpg Graphic file (type jpg)
 <use images/puissancelissee.jpg>
 Package pdftex.def Info: images/puissancelissee.jpg  used on input line 116.
@@ -774,7 +773,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-<images/diagramme.jpg, id=34, 799.3062pt x 104.5506pt>
+<images/diagramme.jpg, id=33, 799.3062pt x 104.5506pt>
 File: images/diagramme.jpg Graphic file (type jpg)
 <use images/diagramme.jpg>
 Package pdftex.def Info: images/diagramme.jpg  used on input line 130.
@@ -795,7 +794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-<images/herve001corect.jpg, id=39, 684.6378pt x 387.849pt>
+<images/herve001corect.jpg, id=38, 684.6378pt x 387.849pt>
 File: images/herve001corect.jpg Graphic file (type jpg)
 <use images/herve001corect.jpg>
 Package pdftex.def Info: images/herve001corect.jpg  used on input line 143.
@@ -810,7 +809,585 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-(signauxopt.tex)
+(signauxopt.tex
+
+! Package inputenc Error: Unicode char éfi (U+D8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...éfinition des objectifs de la modélisation}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éli (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...éfinition des objectifs de la modélisation}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éli (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 La modéli
+             sation consiste à déterminer les paramètres de la fonction de c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.3 La modélisation consiste à dé
+                                 terminer les paramètres de la fonction de c...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.3 La modélisation consiste à dé
+                                 terminer les paramètres de la fonction de c...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.3 La modélisation consiste à dé
+                                 terminer les paramètres de la fonction de c...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.3 La modélisation consiste à dé
+                                 terminer les paramètres de la fonction de c...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char àdé (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 La modélisation consiste à dé
+                                 terminer les paramètres de la fonction de c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...lisation consiste à déterminer les paramètr
+                                                  es de la fonction de comma...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àpa (U+D1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...mètres de la fonction de commande qui, à pa
+                                                  rtir des signaux BCI, préd...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...mmande qui, à partir des signaux BCI, prédi
+                                                  t la suite d?ordres donnés...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ésa (U+DD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...naux BCI, prédit la suite d?ordres donnés a
+                                                  u robot. ?Ces ordres peuve...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char êtr (U+F0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...es donnés au robot. ?Ces ordres peuvent êtr
+                                                  e donnés pour des durées d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ésp (U+EC)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...au robot. ?Ces ordres peuvent être donnés p
+                                                  our des durées différentes...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ées (U+E1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ... ordres peuvent être donnés pour des durées
+                                                   différentes (environ 5s d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ére (U+E0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...peuvent être donnés pour des durées différe
+                                                  ntes (environ 5s dans les ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char êtr (U+F0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...5s dans les signaux fournis) et peuvent êtr
+                                                  e les suivants :
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àdr (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 - aller à dr
+                oite
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àga (U+C8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 - aller à ga
+                uche
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char èsl (U+E7)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 Après l
+           e traitement du signal par les filtres et le calcul de la puissan...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éep (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ltres et le calcul de la puissance lissée p
+                                                  our chacun des signaux cor...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àun (U+E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ... pour chacun des signaux correspondant à un
+                                                  e fréquence et donc à un o...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char équ (U+EF)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...hacun des signaux correspondant à une fréqu
+                                                  ence et donc à un ordre, n...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àun (U+E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ... correspondant à une fréquence et donc à un
+                                                   ordre, nous avons, dans u...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.8 ...ous avons, dans un premier temps, considéré
+                                                   que l?ordre donné était c...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.8 ...ous avons, dans un premier temps, considéré
+                                                   que l?ordre donné était c...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.8 ...ous avons, dans un premier temps, considéré
+                                                   que l?ordre donné était c...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.8 ...ous avons, dans un premier temps, considéré
+                                                   que l?ordre donné était c...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éré (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ous avons, dans un premier temps, considéré
+                                                   que l?ordre donné était c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.8 ...emier temps, considéré que l?ordre donné ét
+                                                  ait celui associé au signa...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.8 ...emier temps, considéré que l?ordre donné ét
+                                                  ait celui associé au signa...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.8 ...emier temps, considéré que l?ordre donné ét
+                                                  ait celui associé au signa...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.8 ...emier temps, considéré que l?ordre donné ét
+                                                  ait celui associé au signa...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éét (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...emier temps, considéré que l?ordre donné ét
+                                                  ait celui associé au signa...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éau (U+DF)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ré que l?ordre donné était celui associé au
+                                                   signal de plus grande amp...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éta (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ... grande amplitude et que si les signaux éta
+                                                  ient tous inférieurs à un ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éri (U+E4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...e et que si les signaux étaient tous inféri
+                                                  eurs à un certain seuil, c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àun (U+E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...si les signaux étaient tous inférieurs à un
+                                                   certain seuil, cela carac...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éri (U+E4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...férieurs à un certain seuil, cela caractéri
+                                                  sait l?absence d?ordre. ??...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.8 ...l?absence d?ordre. ??Nous avons cherché à o
+                                                  ptimiser les paramètres de...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.8 ...l?absence d?ordre. ??Nous avons cherché à o
+                                                  ptimiser les paramètres de...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.8 ...l?absence d?ordre. ??Nous avons cherché à o
+                                                  ptimiser les paramètres de...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.8 ...l?absence d?ordre. ??Nous avons cherché à o
+                                                  ptimiser les paramètres de...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éào (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...l?absence d?ordre. ??Nous avons cherché à o
+                                                  ptimiser les paramètres de...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...Nous avons cherché à optimiser les paramètr
+                                                  es de la fonction de comma...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àde (U+C9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...e la fonction de commande relativement à de
+                                                  ux grandeurs :
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 l?erreur de prédi
+                      ction des ordres
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -819,113 +1396,2571 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6
 
- <./images/herve001corect.jpg>] (ROS.tex
-<images/ArchiDiagram.png, id=43, 785.93625pt x 160.6pt>
-File: images/ArchiDiagram.png Graphic file (type png)
-<use images/ArchiDiagram.png>
-Package pdftex.def Info: images/ArchiDiagram.png  used on input line 12.
-(pdftex.def)             Requested size: 314.36893pt x 64.23885pt.
+ <./images/herve001corect.jpg>]
+
+! Package inputenc Error: Unicode char épa (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...l sur bruit global, nous avons commencé pa
+                                                  r distinguer, pour chaque ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+! Package inputenc Error: Unicode char éch (U+D4)
+(inputenc)                not set up for use with LaTeX.
 
-[7
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 les éch
+            antillons pendant lesquels un ordre correspondant à la fréquence...
 
- <./images/ArchiDiagram.png>]
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-Overfull \hbox (47.97908pt too wide) in paragraph at lines 44--45
-\T1/cmr/m/n/10.95 Où [path_to_file] est le chemin com-plet pour un de ces fichi
-ers sur pro-jet/obj. Ou-vrons 'herve002_labeled.txt'
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àla (U+CD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...ndant lesquels un ordre correspondant à la
+                                                   fréquence du signal yi ét...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char équ (U+EF)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...lesquels un ordre correspondant à la fréqu
+                                                  ence du signal yi était donné
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éta (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...respondant à la fréquence du signal yi éta
+                                                  it donné
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éle (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 le
+       s échantillons pendant lesquels l?ordre correspondant à la fréquence ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éch (U+D4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 les éch
+            antillons pendant lesquels l?ordre correspondant à la fréquence ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àla (U+CD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...endant lesquels l?ordre correspondant à la
+                                                   fréquence yi n?était pas ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char équ (U+EF)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ... lesquels l?ordre correspondant à la fréqu
+                                                  ence yi n?était pas donné.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éta (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...rdre correspondant à la fréquence yi n?éta
+                                                  it pas donné.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char é.P (U+87)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 P
+      uis, pour chacun des trois signaux yi, nous avons calculé la puissance...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éla (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...es trois signaux yi, nous avons calculé la
+                                                   puissance moyenne du sign...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éch (U+D4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...la puissance moyenne du signal sur les éch
+                                                  antillons correspondant à ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àl? (U+AB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...al sur les échantillons correspondant à l?
+                                                  ordre associé à yi (cela c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.15 ...illons correspondant à l?ordre associé à y
+                                                  i (cela constitue le « sig...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.15 ...illons correspondant à l?ordre associé à y
+                                                  i (cela constitue le « sig...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.15 ...illons correspondant à l?ordre associé à y
+                                                  i (cela constitue le « sig...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.15 ...illons correspondant à l?ordre associé à y
+                                                  i (cela constitue le « sig...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éày (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...illons correspondant à l?ordre associé à y
+                                                  i (cela constitue le « sig...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ... l?ordre associé à yi (cela constitue le «
+                                                   signal ») ainsi que la pu...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...l?ordre associé à yi (cela constitue le « 
+                                                  signal ») ainsi que la pui...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ... associé à yi (cela constitue le « signal 
+                                                  ») ainsi que la puissance ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...associé à yi (cela constitue le « signal »
+                                                  ) ainsi que la puissance m...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char éch (U+D4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...la puissance moyenne du signal sur les éch
+                                                  antillons correspondant à ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àun (U+E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...al sur les échantillons correspondant à un
+                                                   ordre autre que celui ass...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.15 ...ant à un ordre autre que celui associé à y
+                                                  i (cela constitue le « bru...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.15 ...ant à un ordre autre que celui associé à y
+                                                  i (cela constitue le « bru...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.15 ...ant à un ordre autre que celui associé à y
+                                                  i (cela constitue le « bru...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.15 ...ant à un ordre autre que celui associé à y
+                                                  i (cela constitue le « bru...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éày (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...ant à un ordre autre que celui associé à y
+                                                  i (cela constitue le « bru...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...ue celui associé à yi (cela constitue le «
+                                                   bruit »). ?Ensuite, nous ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...e celui associé à yi (cela constitue le « 
+                                                  bruit »). ?Ensuite, nous a...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...i associé à yi (cela constitue le « bruit 
+                                                  »). ?Ensuite, nous avons c...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ... associé à yi (cela constitue le « bruit »
+                                                  ). ?Ensuite, nous avons ca...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char éla (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ... bruit »). ?Ensuite, nous avons calculé la
+                                                   moyenne de ces 3 rapports...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àma (U+CE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...nal sur bruit global, qu?on cherchera à ma
+                                                  ximiser dans le choix des ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...era à maximiser dans le choix des paramètr
+                                                  es (fonction SNR dans Matl...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éde (U+D2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 Afin de juger de la qualité de
+                                    la fonction de commande, nous avons égal...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éga (U+D1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...de la fonction de commande, nous avons éga
+                                                  lement défini la fonction ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éfi (U+D8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...ion de commande, nous avons également défi
+                                                  ni la fonction « erreurpre...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ... nous avons également défini la fonction «
+                                                   erreurprediction » qui co...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...nous avons également défini la fonction « 
+                                                  erreurprediction » qui com...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...ent défini la fonction « erreurprediction 
+                                                  » qui compare, pour chaque...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...nt défini la fonction « erreurprediction »
+                                                   qui compare, pour chaque ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char éch (U+D4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...rprediction » qui compare, pour chaque éch
+                                                  antillon d?un enregistreme...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éel (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...antillon d?un enregistrement, l?ordre réel
+                                                  , donné dans l?énoncé, et ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éda (U+CE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...?un enregistrement, l?ordre réel, donné da
+                                                  ns l?énoncé, et l?ordre pr...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éno (U+E6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...gistrement, l?ordre réel, donné dans l?éno
+                                                  ncé, et l?ordre prédit par...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char é,e (U+9A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...ment, l?ordre réel, donné dans l?énoncé, e
+                                                  t l?ordre prédit par la fo...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...éel, donné dans l?énoncé, et l?ordre prédi
+                                                  t par la fonction « comman...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...noncé, et l?ordre prédit par la fonction «
+                                                   commande ». La fonction «...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...oncé, et l?ordre prédit par la fonction « 
+                                                  commande ». La fonction « ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...l?ordre prédit par la fonction « commande 
+                                                  ». La fonction « erreurpre...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...?ordre prédit par la fonction « commande »
+                                                  . La fonction « erreurpred...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...ar la fonction « commande ». La fonction «
+                                                   erreurprediction » donne ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...r la fonction « commande ». La fonction « 
+                                                  erreurprediction » donne e...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...ommande ». La fonction « erreurprediction 
+                                                  » donne en sortie le pourc...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...mmande ». La fonction « erreurprediction »
+                                                   donne en sortie le pource...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char éch (U+D4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...ion » donne en sortie le pourcentage d?éch
+                                                  antillons pour lesquels l?...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...d?échantillons pour lesquels l?ordre prédi
+                                                  t ne correspond pas à l?or...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àl? (U+AB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...uels l?ordre prédit ne correspond pas à l?
+                                                  ordre réel. ?
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éel (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ...re prédit ne correspond pas à l?ordre réel
+                                                  . ?
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ère (U+DF)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 La première
+                 étape de l?optimisation des paramètres de commande est cell...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éta (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 La première éta
+                    pe de l?optimisation des paramètres de commande est cell...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...mière étape de l?optimisation des paramètr
+                                                  es de commande est celle d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...amètres de commande est celle des paramètr
+                                                  es des filtres passe-bande...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char és. (U+AA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ramètres des filtres passe-bande utilisés.
+                                                   Nous avons cherché à trou...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.20 ...sse-bande utilisés. Nous avons cherché à t
+                                                  rouver le gain (G) et la b...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.20 ...sse-bande utilisés. Nous avons cherché à t
+                                                  rouver le gain (G) et la b...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.20 ...sse-bande utilisés. Nous avons cherché à t
+                                                  rouver le gain (G) et la b...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.20 ...sse-bande utilisés. Nous avons cherché à t
+                                                  rouver le gain (G) et la b...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éàt (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...sse-bande utilisés. Nous avons cherché à t
+                                                  rouver le gain (G) et la b...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.20 ...r le gain (G) et la bande passante (delta_
+                                                  f) maximisant le rapport s...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! Package inputenc Error: Unicode char é-u (U+AB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ie des filtres. Pour cela, nous avons ré-u
+                                                  tilisé la fonction de calc...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éla (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ltres. Pour cela, nous avons ré-utilisé la
+                                                   fonction de calcul du rap...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char écr (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...de calcul du rapport signal sur bruit décr
+                                                  ite précédemment (SNR) et ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.20 ... du rapport signal sur bruit décrite précé
+                                                  demment (SNR) et nous avon...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.20 ... du rapport signal sur bruit décrite précé
+                                                  demment (SNR) et nous avon...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.20 ... du rapport signal sur bruit décrite précé
+                                                  demment (SNR) et nous avon...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.20 ... du rapport signal sur bruit décrite précé
+                                                  demment (SNR) et nous avon...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char écé (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ... du rapport signal sur bruit décrite précé
+                                                  demment (SNR) et nous avon...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.20 ...e précédemment (SNR) et nous avons procédé
+                                                   par grid-search sur les p...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.20 ...e précédemment (SNR) et nous avons procédé
+                                                   par grid-search sur les p...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.20 ...e précédemment (SNR) et nous avons procédé
+                                                   par grid-search sur les p...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.20 ...e précédemment (SNR) et nous avons procédé
+                                                   par grid-search sur les p...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char édé (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...e précédemment (SNR) et nous avons procédé
+                                                   par grid-search sur les p...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...s procédé par grid-search sur les paramètr
+                                                  es G et delta_f. Cette éta...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éta (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...sur les paramètres G et delta_f. Cette éta
+                                                  pe d?optimisation est donn...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éep (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...f. Cette étape d?optimisation est donnée p
+                                                  ar « choixDfGain ». Nous a...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ette étape d?optimisation est donnée par «
+                                                   choixDfGain ». Nous avons...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...tte étape d?optimisation est donnée par « 
+                                                  choixDfGain ». Nous avons ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...optimisation est donnée par « choixDfGain 
+                                                  ». Nous avons obtenu la fi...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...ptimisation est donnée par « choixDfGain »
+                                                  . Nous avons obtenu la fig...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.21 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (754.30452pt too wide) in paragraph at lines 20--21
+\T1/cmr/m/n/10.95 utilis Nous avons cher-chrou-ver le gain (G) et la bande pas-
+sante (delta$[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 maximisantlerapportsigna
+lsurbruitpourlesignalensortiedesfiltres:Pourcela; nousavonsrtilisfonctiondecalc
+uldurapportsignalsurbruitditeprdemment\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 S
+NR\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 etnousavonsprocpargrid \OMS/cmsy/m/n/
+10.95  
  []
 
-<bci1.png, id=51, 807.015pt x 278.03876pt>
-File: bci1.png Graphic file (type png)
-<use bci1.png>
-Package pdftex.def Info: bci1.png  used on input line 48.
-(pdftex.def)             Requested size: 403.50652pt x 139.01903pt.
-<bci2.png, id=52, 771.88374pt x 178.6675pt>
-File: bci2.png Graphic file (type png)
-<use bci2.png>
-Package pdftex.def Info: bci2.png  used on input line 62.
-(pdftex.def)             Requested size: 385.94092pt x 89.33353pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8 <./bci1.png>]
-<bci3.png, id=56, 908.39375pt x 140.525pt>
-File: bci3.png Graphic file (type png)
-<use bci3.png>
-Package pdftex.def Info: bci3.png  used on input line 79.
-(pdftex.def)             Requested size: 454.19577pt x 70.26231pt.
-
-Overfull \hbox (25.7403pt too wide) in paragraph at lines 84--85
-[]\T1/cmr/m/n/10.95 Contrairement au /bci_source, ce n÷ud est im-plé-menté comm
-e une classe ap-pelée \T1/cmr/bx/n/10.95 Sig-nal_processer
+Overfull \hbox (349.12721pt too wide) in paragraph at lines 20--21
+\OML/cmm/m/it/10.95 searchsurlesparamesGetdelta[]:Cetteped\OT1/cmr/m/n/10.95 ?\
+OML/cmm/m/it/10.95 optimisationestdonnarchoixDfGain:Nousavonsobtenulafiguresuiv
+ante; avecunarc\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 jauneclair\OT1/cmr/m/n/1
+0.95 )\OML/cmm/m/it/10.95 decouples\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 delt
+a[]; G\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 optimaux:$ 
  []
 
+<images/DfGainOpt.jpeg, id=42, 1108.14pt x 901.3675pt>
+File: images/DfGainOpt.jpeg Graphic file (type jpg)
+<use images/DfGainOpt.jpeg>
+Package pdftex.def Info: images/DfGainOpt.jpeg  used on input line 24.
+(pdftex.def)             Requested size: 277.03432pt x 225.34131pt.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 ...n{Couples (delta_f, G) minimisant le SNR }
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.25 ...n{Couples (delta_f, G) minimisant le SNR }
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-[9 <./bci2.png> <./bci3.png>])
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 - delta_
+             f = 0,33
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-[10]
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
 
-[11
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...on{Minimisation de l'erreur de prédiction}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-] (rapport.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+! Package inputenc Error: Unicode char èsa (U+DC)
+(inputenc)                not set up for use with LaTeX.
 
- ) 
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 Après a
+            voir maximisé le rapport SNR relativement à delta_f et G, nous a...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éle (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 Après avoir maximisé le
+                             rapport SNR relativement à delta_f et G, nous a...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àde (U+C9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ... maximisé le rapport SNR relativement à de
+                                                  lta_f et G, nous avons che...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.35 ...imisé le rapport SNR relativement à delta_
+                                                  f et G, nous avons cherché...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.35 ...ent à delta_f et G, nous avons cherché à m
+                                                  inimiser l?erreur entre la...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.35 ...ent à delta_f et G, nous avons cherché à m
+                                                  inimiser l?erreur entre la...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.35 ...ent à delta_f et G, nous avons cherché à m
+                                                  inimiser l?erreur entre la...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.35 ...ent à delta_f et G, nous avons cherché à m
+                                                  inimiser l?erreur entre la...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éàm (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...ent à delta_f et G, nous avons cherché à m
+                                                  inimiser l?erreur entre la...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...herché à minimiser l?erreur entre la prédi
+                                                  ction d?ordre et les ordre...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éel (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 ...e la prédiction d?ordre et les ordres réel
+                                                  s. ?
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char équ (U+EF)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 Pour ce faire, nous avons jugé qu
+                                      ?il serait plus pertinent d?associer à...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àch (U+CB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...u?il serait plus pertinent d?associer à ch
+                                                  aque signal un seuil, au d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àdu (U+D9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...ocier à chaque signal un seuil, au delà du
+                                                  quel on considérerait que ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ére (U+E0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...gnal un seuil, au delà duquel on considére
+                                                  rait que l?ordre est donné...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char é,d (U+99)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ... on considérerait que l?ordre est donné, d
+                                                  ifférent plutôt qu?un seui...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ére (U+E0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...nsidérerait que l?ordre est donné, différe
+                                                  nt plutôt qu?un seuil glob...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...ait que l?ordre est donné, différent plutô
+                                                  t qu?un seuil global. Nous...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.36 ... seuil global. Nous avons donc cherché à o
+                                                  ptimiser 3 seuils différen...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.36 ... seuil global. Nous avons donc cherché à o
+                                                  ptimiser 3 seuils différen...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.36 ... seuil global. Nous avons donc cherché à o
+                                                  ptimiser 3 seuils différen...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.36 ... seuil global. Nous avons donc cherché à o
+                                                  ptimiser 3 seuils différen...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éào (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ... seuil global. Nous avons donc cherché à o
+                                                  ptimiser 3 seuils différen...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ére (U+E0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ... donc cherché à optimiser 3 seuils différe
+                                                  nts, un associé à chaque s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.36 ...imiser 3 seuils différents, un associé à c
+                                                  haque signal yi. ?De plus,...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.36 ...imiser 3 seuils différents, un associé à c
+                                                  haque signal yi. ?De plus,...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.36 ...imiser 3 seuils différents, un associé à c
+                                                  haque signal yi. ?De plus,...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.36 ...imiser 3 seuils différents, un associé à c
+                                                  haque signal yi. ?De plus,...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éàc (U+9)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...imiser 3 seuils différents, un associé à c
+                                                  haque signal yi. ?De plus,...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ... à chaque signal yi. ?De plus, le paramètr
+                                                  e de lissage alpha a, lui ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.36 ...ramètre de lissage alpha a, lui aussi, été
+                                                   optimisé de façon à minim...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.36 ...ramètre de lissage alpha a, lui aussi, été
+                                                   optimisé de façon à minim...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.36 ...ramètre de lissage alpha a, lui aussi, été
+                                                   optimisé de façon à minim...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.36 ...ramètre de lissage alpha a, lui aussi, été
+                                                   optimisé de façon à minim...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char été (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...ramètre de lissage alpha a, lui aussi, été
+                                                   optimisé de façon à minim...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éde (U+D2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...issage alpha a, lui aussi, été optimisé de
+                                                   façon à minimiser l?erreu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char çon (U+E4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ... alpha a, lui aussi, été optimisé de façon
+                                                   à minimiser l?erreur de p...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àmi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...a a, lui aussi, été optimisé de façon à mi
+                                                  nimiser l?erreur de prédic...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...isé de façon à minimiser l?erreur de prédi
+                                                  ction. ?
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.37 Nous avons procédé
+                        de façon itérative par optimisation successive des s...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.37 Nous avons procédé
+                        de façon itérative par optimisation successive des s...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.37 Nous avons procédé
+                        de façon itérative par optimisation successive des s...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.37 Nous avons procédé
+                        de façon itérative par optimisation successive des s...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char édé (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 Nous avons procédé
+                        de façon itérative par optimisation successive des s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char çon (U+E4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 Nous avons procédé de façon
+                                 itérative par optimisation successive des s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éra (U+DC)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 Nous avons procédé de façon itéra
+                                      tive par optimisation successive des s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...cessive des seuils optimaux et du paramètr
+                                                  e alpha relativement à l?e...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àl? (U+AB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...ux et du paramètre alpha relativement à l?
+                                                  erreur de prédiction.?Nous...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...tre alpha relativement à l?erreur de prédi
+                                                  ction.?Nous avons commencé...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char épa (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...reur de prédiction.?Nous avons commencé pa
+                                                  r fixer alpha, le paramètr...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...vons commencé par fixer alpha, le paramètr
+                                                  e d?estimation lissée de l...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éed (U+D2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ... alpha, le paramètre d?estimation lissée d
+                                                  e la puissance de chacun d...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éri (U+E4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...s alpha s?approche de 1 par valeurs inféri
+                                                  eures, plus l?estimation e...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ée. (U+9C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...inférieures, plus l?estimation est lissée.
+                                                   ?Initialement, nous avons...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éal (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ... lissée. ?Initialement, nous avons fixé al
+                                                  pha = 0,99 pour pouvoir ef...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...fectuer un premier calcul des ordres prédi
+                                                  ts.  ?
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ésd (U+E0)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...e, pour les trois enregistrements donnés d
+                                                  ans l?énoncé, les 5 premiè...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éno (U+E6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...es trois enregistrements donnés dans l?éno
+                                                  ncé, les 5 premières secon...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char é,l (U+A1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...is enregistrements donnés dans l?énoncé, l
+                                                  es 5 premières secondes co...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ère (U+DF)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...ments donnés dans l?énoncé, les 5 première
+                                                  s secondes correspondent à...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àch (U+CB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...es 5 premières secondes correspondent à ch
+                                                  aque fois à une absence d?...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àun (U+E3)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ... secondes correspondent à chaque fois à un
+                                                  e absence d?ordre, nous av...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char é,p (U+A5)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...une absence d?ordre, nous avons calculé, p
+                                                  our chaque signal, la puis...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àla (U+CD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...pendant cet intervalle, correspondant à la
+                                                   puissance moyenne du brui...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éte (U+E2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...e moyenne du bruit. ?Puis, nous avons déte
+                                                  rminé la puissance maximal...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éla (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...e du bruit. ?Puis, nous avons déterminé la
+                                                   puissance maximale de cha...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éde (U+D2)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...ximale de chaque signal sur la totalité de
+                                                  s échantillons et nous avo...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éch (U+D4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...e de chaque signal sur la totalité des éch
+                                                  antillons et nous avons dé...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éfi (U+D8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...talité des échantillons et nous avons défi
+                                                  ni le seuil pour un signal...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éta (U+DE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...s défini le seuil pour un signal comme éta
+                                                  nt la somme de la puissanc...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éme (U+DB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...ale du signal. ?Nous avons ensuite incréme
+                                                  nté le seuil de chacun des...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éle (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ... signal. ?Nous avons ensuite incrémenté le
+                                                   seuil de chacun des signa...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àla (U+CD)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...lant de la puissance moyenne du bruit à la
+                                                   puissance maximale du sig...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éme (U+DB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...ale du signal. Nous avons choisi d?incréme
+                                                  nter les seuils d?un dixiè...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ème (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...oisi d?incrémenter les seuils d?un dixième
+                                                   de la puissance totale du...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...e valeur de seuil, nous calculons la prédi
+                                                  ction de l?ordre correspon...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àce (U+C8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ... prédiction de l?ordre correspondante à ce
+                                                   seuil et l?erreur corresp...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...e seuil minimisant l?erreur entre la prédi
+                                                  ction des ordres des ordre...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éel (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...n des ordres des ordres et les ordres réel
+                                                  lement donnés. ?La fonctio...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char és. (U+AA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...es ordres et les ordres réellement donnés.
+                                                   ?La fonction optim_3seuil...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.38 ...imaux et nous retenons l?erreur associée à
+                                                   ces seuils et ce alpha. ?
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.38 ...imaux et nous retenons l?erreur associée à
+                                                   ces seuils et ce alpha. ?
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.38 ...imaux et nous retenons l?erreur associée à
+                                                   ces seuils et ce alpha. ?
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.38 ...imaux et nous retenons l?erreur associée à
+                                                   ces seuils et ce alpha. ?
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char éeà (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...imaux et nous retenons l?erreur associée à
+                                                   ces seuils et ce alpha. ?
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éle (U+DA)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 Ensuite, nous avons fixé le
+                                s seuils obtenus précédemment et effectué un...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.39 ..., nous avons fixé les seuils obtenus précé
+                                                  demment et effectué un « g...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing ) inserted for expression.
+<to be read again> 
+                   (
+l.39 ..., nous avons fixé les seuils obtenus précé
+                                                  demment et effectué un « g...
+I was expecting to see `+', `-', `*', `/', or `)'. Didn't.
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   (
+l.39 ..., nous avons fixé les seuils obtenus précé
+                                                  demment et effectué un « g...
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.39 ..., nous avons fixé les seuils obtenus précé
+                                                  demment et effectué un « g...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Package inputenc Error: Unicode char écé (U+)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ..., nous avons fixé les seuils obtenus précé
+                                                  demment et effectué un « g...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char éun (U+EC)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...seuils obtenus précédemment et effectué un
+                                                   « grid search » sur le pa...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...uils obtenus précédemment et effectué un «
+                                                   grid search » sur le para...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...ils obtenus précédemment et effectué un « 
+                                                  grid search » sur le param...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...précédemment et effectué un « grid search 
+                                                  » sur le paramètre alpha d...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...récédemment et effectué un « grid search »
+                                                   sur le paramètre alpha de...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Unicode char ètr (U+EE)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...ffectué un « grid search » sur le paramètr
+                                                  e alpha de façon à ce qu?i...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char çon (U+E4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...d search » sur le paramètre alpha de façon
+                                                   à ce qu?il  minimise l?er...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char àce (U+C8)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...rch » sur le paramètre alpha de façon à ce
+                                                   qu?il  minimise l?erreur ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char édi (U+D6)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...çon à ce qu?il  minimise l?erreur de prédi
+                                                  ction avec les seuils calc...
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 5801 strings out of 493308
- 77657 string characters out of 3138751
- 172670 words of memory out of 3000000
- 9234 multiletter control sequences out of 15000+200000
- 14621 words of font info for 34 fonts, out of 3000000 for 9000
+ 5432 strings out of 493308
+ 74026 string characters out of 3138751
+ 151737 words of memory out of 3000000
+ 8879 multiletter control sequences out of 15000+200000
+ 13149 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,58p,2464b,1115s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfb
-x2074.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on rapport.pdf (13 pages, 1052151 bytes).
-PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41i,12n,43p,1211b,231s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+!  ==> Fatal error occurred, no output PDF file produced!
