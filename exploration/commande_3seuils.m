@@ -25,9 +25,9 @@ Z3(1) = Y3(1,1)^2;
 
 %On calcule la puissance lissée pour chaque signal
 for i = 2:size(Y1,1)+1
-    Z1(i) = (1-alpha)*Y1(i)^2 + alpha * Z1(i-1)^2;
-    Z2(i) = (1-alpha)*Y2(i)^2 + alpha * Z2(i-1)^2;
-    Z3(i) = (1-alpha)*Y3(i)^2 + alpha * Z3(i-1)^2;
+    Z1(i) = (1-alpha)*Y1(i)^2 + alpha * Z1(i-1);
+    Z2(i) = (1-alpha)*Y2(i)^2 + alpha * Z2(i-1);
+    Z3(i) = (1-alpha)*Y3(i)^2 + alpha * Z3(i-1);
 end
 
 
@@ -42,6 +42,15 @@ a = 1;
 Z1 = filter(b,a,abs(Z1));
 Z2 = filter(b,a,abs(Z2));
 Z3 = filter(b,a,abs(Z3));
+figure;
+Y = 1/256:1/256:length(Z1(:,1))/256
+
+plot(Y,Z3);
+hold on;
+xlabel('Temps (en s)');
+ylabel('Amplitude du signal');
+legend('droite');
+set(gca,'FontSize',16);
 
 bruit_1 = sum(Z1(1:5*256))/(5*256);
 bruit_2 = sum(Z2(1:5*256))/(5*256);

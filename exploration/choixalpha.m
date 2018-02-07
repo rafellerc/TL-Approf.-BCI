@@ -1,6 +1,6 @@
-addpath(genpath('\\ntelev.metz.supelec.centralesupelec.local\Users\daviet_mat\WINNT\Desktop\TLAppro\acquisition_biosemi\Enregistrements'));
-addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\obj'));
-addpath(genpath('C:\Users\daviet_mat\TL-Approf.-BCI\src'));
+addpath(genpath('..\acquisition_biosemi\Enregistrements'));
+addpath(genpath('..\obj'));
+addpath(genpath('..\src'));
 
 % addpath(genpath('/Users/Rafael/sir/TL-Approf.-BCI/obj'));
 % addpath(genpath('/Users/Rafael/sir/'));
@@ -18,9 +18,9 @@ fc_2 = 11;
 fc_3 = 13.5;
 
 
-G = 0.01:0.01:1;
-delta_f = 0.01:0.01:1;
-alpha = 0.01:0.01:1;
+G = 1:1:1;
+delta_f = 1:1:1;
+alpha = 0.1:0.1:1;
 
 SNRmat = zeros (length(G), length(delta_f), length(alpha));
 
@@ -46,9 +46,9 @@ for i = 1:length(G)
             
             
             for l = 2:size(Y1,1)
-                Z1(l) = (1-alpha(k))*Y1(l)^2 + alpha(k) * Z1(l-1)^2;
-                Z2(l) = (1-alpha(k))*Y2(l)^2 + alpha(k) * Z2(l-1)^2;
-                Z3(l) = (1-alpha(k))*Y3(l)^2 + alpha(k) * Z3(l-1)^2;
+                Z1(l) = (1-alpha(k))*Y1(l)^2 + alpha(k) * Z1(l-1);
+                Z2(l) = (1-alpha(k))*Y2(l)^2 + alpha(k) * Z2(l-1);
+                Z3(l) = (1-alpha(k))*Y3(l)^2 + alpha(k) * Z3(l-1);
             end
             
                         %filters the singal in with fcut ~ 7 Hz. To allow to get only the value

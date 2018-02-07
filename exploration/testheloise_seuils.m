@@ -7,8 +7,15 @@ close all
 % addpath(genpath('/Users/Rafael/sir/'));
 addpath(genpath('/Users/heloisehuyghuesdespointes/Documents/TL-Approf.-BCI'));
 
-X = load('herve003.txt');
-H = load('herve003_labeled.txt');
+X = load('herve001.txt');
+test = 64*256-256*4+1;
+ER(:,1) = X(256*4:64*256, 1);
+ER(:,2) = X(1:test, 2);
+X=ER;
+H = load('herve001_labeled.txt');
+ER1(:,1) = H(256*4:64*256, 1);
+ER1(:,2) = H(1:test, 2);
+H = ER1;
 
 %Seuils trouvés par optmin_3seuils :
 
@@ -29,7 +36,7 @@ delta_f = 0.33; %Opt = 0.33
 G = 0.56;  %Opt = 0.56
 len_X = size(X);
 T = (1/fe)*(0:len_X);
-alpha = 0.5;
+alpha = 0.99;
 
 [prediction] = commande_3seuils(X, seuil1, seuil2, seuil3 ,delta_f, G,alpha);
 [erreur] = erreurprediction(prediction,H(:,2));
