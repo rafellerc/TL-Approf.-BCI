@@ -1,1 +1,46 @@
-test1
+
+\subsection{Définition des objectifs de la modélisation}
+
+La modélisation consiste à déterminer les paramètres de la fonction de commande qui, à partir des signaux BCI, prédit la suite d?ordres donnés au robot. ?Ces ordres peuvent être donnés pour des durées différentes (environ 5s dans les signaux fournis) et peuvent être les suivants : 
+- avancer
+- aller à droite
+- aller à gauche
+- rester immobile/s?immobiliser?
+Après le traitement du signal par les filtres et le calcul de la puissance lissée pour chacun des signaux correspondant à une fréquence et donc à un ordre, nous avons, dans un premier temps, considéré que l?ordre donné était celui associé au signal de plus grande amplitude et que si les signaux étaient tous inférieurs à un certain seuil, cela caractérisait l?absence d?ordre. ??Nous avons cherché à optimiser les paramètres de la fonction de commande relativement à deux grandeurs : 
+le rapport signal sur bruit global 
+l?erreur de prédiction des ordres
+
+Pour calculer le rapport signal sur bruit global, nous avons commencé par distinguer, pour chaque signal yi : 
+les échantillons pendant lesquels un ordre correspondant à la fréquence du signal yi était donné
+les échantillons pendant lesquels l?ordre correspondant à la fréquence yi n?était pas donné. 
+Puis, pour chacun des trois signaux yi, nous avons calculé la puissance moyenne du signal sur les échantillons correspondant à l?ordre associé à yi (cela constitue le « signal ») ainsi que la puissance moyenne du signal sur les échantillons correspondant à un ordre autre que celui associé à yi (cela constitue le « bruit »). ?Ensuite, nous avons calculé la moyenne de ces 3 rapports signal/bruit pour avoir un rapport signal sur bruit global, qu?on cherchera à maximiser dans le choix des paramètres (fonction SNR dans Matlab). 
+
+Afin de juger de la qualité de la fonction de commande, nous avons également défini la fonction « erreurprediction » qui compare, pour chaque échantillon d?un enregistrement, l?ordre réel, donné dans l?énoncé, et l?ordre prédit par la fonction « commande ». La fonction « erreurprediction » donne en sortie le pourcentage d?échantillons pour lesquels l?ordre prédit ne correspond pas à l?ordre réel. ?
+\subsection{Maximisation du rapport signal sur bruit}
+
+La première étape de l?optimisation des paramètres de commande est celle des paramètres des filtres passe-bande utilisés. Nous avons cherché à trouver le gain (G) et la bande passante (delta_f) maximisant le rapport signal sur bruit pour le signal en sortie des filtres. Pour cela, nous avons ré-utilisé la fonction de calcul du rapport signal sur bruit décrite précédemment (SNR) et nous avons procédé par grid-search sur les paramètres G et delta_f. Cette étape d?optimisation est donnée par « choixDfGain ». Nous avons obtenu la figure suivante, avec un arc (jaune clair) de couples (delta_f, G) optimaux.
+
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.25]{images/DfGainOpt}
+	\caption{Couples (delta_f, G) minimisant le SNR }
+	\label{fig:duck}
+\end{figure}
+
+Pour la suite, nous avons choisi :
+- delta_f = 0,33
+- G = 0,56 
+
+\subsection{Minimisation de l'erreur de prédiction}
+
+Après avoir maximisé le rapport SNR relativement à delta_f et G, nous avons cherché à minimiser l?erreur entre la prédiction d?ordre et les ordres réels. ?
+Pour ce faire, nous avons jugé qu?il serait plus pertinent d?associer à chaque signal un seuil, au delà duquel on considérerait que l?ordre est donné, différent plutôt qu?un seuil global. Nous avons donc cherché à optimiser 3 seuils différents, un associé à chaque signal yi. ?De plus, le paramètre de lissage alpha a, lui aussi, été optimisé de façon à minimiser l?erreur de prédiction. ?
+Nous avons procédé de façon itérative par optimisation successive des seuils optimaux et du paramètre alpha relativement à l?erreur de prédiction.?Nous avons commencé par fixer alpha, le paramètre d?estimation lissée de la puissance de chacun des signaux. Plus alpha s?approche de 1 par valeurs inférieures, plus l?estimation est lissée. ?Initialement, nous avons fixé alpha = 0,99 pour pouvoir effectuer un premier calcul des ordres prédits.  ?
+Sachant que, pour les trois enregistrements donnés dans l?énoncé, les 5 premières secondes correspondent à chaque fois à une absence d?ordre, nous avons calculé, pour chaque signal, la puissance moyenne pendant cet intervalle, correspondant à la puissance moyenne du bruit. ?Puis, nous avons déterminé la puissance maximale de chaque signal sur la totalité des échantillons et nous avons défini le seuil pour un signal comme étant la somme de la puissance moyenne du bruit et d?une fraction de la puissance maximale du signal. ?Nous avons ensuite incrémenté le seuil de chacun des signaux, le seuil allant de la puissance moyenne du bruit à la puissance maximale du signal. Nous avons choisi d?incrémenter les seuils d?un dixième de la puissance totale du signal. ?A chaque nouvelle valeur de seuil, nous calculons la prédiction de l?ordre correspondante à ce seuil et l?erreur correspondante. ?Nous choisissons, pour chacun des trois signaux, le seuil minimisant l?erreur entre la prédiction des ordres des ordres et les ordres réellement donnés. ?La fonction optim_3seuils calcule ces seuils optimaux et nous retenons l?erreur associée à ces seuils et ce alpha. ?
+Ensuite, nous avons fixé les seuils obtenus précédemment et effectué un « grid search » sur le paramètre alpha de façon à ce qu?il  minimise l?erreur de prédiction avec les seuils calculés précédemment fixés. ?Nous utilisons le nouvel alpha optimal pour déterminer de nouveaux seuils optimaux et une nouvelle erreur de prédiction. ??Nous avons réalisé ces optimisations successives sur l?enregistrement 2 et avons obtenus les paramètres suivants : ?- alpha = 0,96?- seuil_ 1 (aller à gauche) = 2.88e-06?- seuil_2 (avancer) = 1.73e-06?- seuil_3 (aller à droite) = 1.36e-06
+
+\subsection{Définition de la fonction de commande}
+
+Nous avons conservé les seuils et la paramètre alpha minimisant l?erreur de prédiction sur les 3 signaux et nous avons défini la fonction de commande comme étant dépendante de ces seuils. ?
+Si chaque signal est inférieur à son seuil, la prédiction est l?absence d?ordre. Sinon, l?ordre prédit est celui correspondant au rapport signal sur seuil le plus grand. ??Avec les paramètres déterminés précédemment, nous obtenus les résultats suivants : erreur_enregistrement_1 = 55,8\%?erreur_enregistrement_2 = 11,1\%?erreur_enregistrement_3 = 13,0\%??Un problème non résolu est l?enregistrement 1. En effet, l?erreur de prédiction reste supérieure à 55\% en dépit des optimisations. Après discussions avec d?autres groupes, nous avons constaté qu?ils rencontraient les même difficultés avec cet enregistrement et nous pouvons supposer qu?il a été mal labellisé. 
+

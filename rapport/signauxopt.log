@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.24)  7 FEB 2018 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.24)  7 FEB 2018 11:17
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**rapport.tex
-(./rapport.tex
+**signauxopt.tex
+(./signauxopt.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
@@ -504,21 +505,9 @@ File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/import/import.sty
 Package: import 2009/03/23  v 5.1
-) (./rapport.aux
-
-LaTeX Warning: Label `fig:duck' multiply defined.
-
-
-LaTeX Warning: Label `fig:duck' multiply defined.
-
-
-LaTeX Warning: Label `fig:duck' multiply defined.
-
-
-LaTeX Warning: Label `fig:duck' multiply defined.
-
 )
-\openout1 = `rapport.aux'.
+No file signauxopt.aux.
+\openout1 = `signauxopt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
@@ -532,7 +521,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -646,18 +634,12 @@ Package pdftex.def Info: CentraleSupelec.jpeg used on input line 36.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Centr
-aleSupelec.jpeg>] (./rapport.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
-)
+aleSupelec.jpeg>]
+No file signauxopt.toc.
 \tf@toc=\write3
-\openout3 = `rapport.toc'.
+\openout3 = `signauxopt.toc'.
 
- [1]
+[1]
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -686,7 +668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<images/signalBCIinit.jpg, id=19, 1927.2pt x 967.615pt>
+<images/signalBCIinit.jpg, id=18, 1927.2pt x 967.615pt>
 File: images/signalBCIinit.jpg Graphic file (type jpg)
 
 <use images/signalBCIinit.jpg>
@@ -716,7 +698,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
  <./images/signalBCIinit.jpg>]
-<images/signalBCIlabele.jpg, id=24, 1371.1225pt x 654.445pt>
+<images/signalBCIlabele.jpg, id=23, 1371.1225pt x 654.445pt>
 File: images/signalBCIlabele.jpg Graphic file (type jpg)
 
 <use images/signalBCIlabele.jpg>
@@ -734,6 +716,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3 <./images/signalBCIlabele.jpg>]
-<images/Sigauxfiltreslables.jpg, id=28, 689.4558pt x 368.577pt>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 104.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 104.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 104.
+
+<images/Sigauxfiltreslables.jpg, id=27, 689.4558pt x 368.577pt>
 File: images/Sigauxfiltreslables.jpg Graphic file (type jpg)
 
+<use images/Sigauxfiltreslables.jpg>
+Package pdftex.def Info: images/Sigauxfiltreslables.jpg used on input line 107.
+
+(pdftex.def)      
