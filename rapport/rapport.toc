@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Extraction de la commande du robot \IeC {\`a} partir des signaux c\IeC {\'e}r\IeC {\'e}braux}{2}
 \contentsline {subsection}{\numberline {2.1}Le signal d'entr\IeC {\'e}e}{2}
-\contentsline {subsection}{\numberline {2.2}Architecture globale de la solution choisie}{4}
+\contentsline {subsection}{\numberline {2.2}Etapes pour l'extraction de la commande \IeC {\`a} partir du signal}{4}
 \contentsline {section}{\numberline {3}Conclusion}{7}
 \contentsline {section}{\numberline {4}Annexe}{8}
