@@ -60,16 +60,16 @@
 
 Lors de ses 11 séances de TL d'approfondissement, nous avons eu l'occasion de réaliser la commande d'un robot Khepera à partir de signaux provenant d'une interface cerveau machine (BCI). Ce projet nous a permis de mettre en pratique les connaissances que nous avons acquises lors des cours de la majeure Systèmes Interactifs et Robotiques et plus particulièrement celles des cours de Modélisation et Analyse Spectrale, Robotique autonome et Programmation C++.\\
 
-\noindent Deux robots Khepera, un système d'acquisition cérébrale et 3 signaux préenregistrés ont été mis à notre disposition pour ce projet. Le robot ne sera commandé que par 4 ordres: rester immobile, tourner à droite, tourner à gauche et avancer.\\
+Deux robots Khepera, un système d'acquisition cérébrale et 3 signaux pré-enregistrés ont été mis à notre disposition pour ce projet. Le robot ne sera commandé que par 4 ordres: rester immobile, tourner à droite, tourner à gauche et avancer.\\
 
-\noindent Notre travail à travers les séances et dans ce rapport est décomposé en 2 grandes étapes: l'extraction des commandes sur les signaux BCI que nous avons effectué principalement sous Matlab et le contrôle du robot grâce au framework ROS et à Python.
+Notre travail à travers les séances et dans ce rapport est décomposé en 2 grandes étapes: l'extraction des commandes sur les signaux BCI que nous avons effectué principalement sous Matlab et le contrôle du robot grâce au framework ROS et à Python.
 
 
 \cleardoublepage
 
 %%%Extraction de la commande%%%
 
-\section{Extraction de la commande du robot à partir des signaux cérébraux}
+\section{Étapes amenant à l'extraction de la commande du robot à partir des signaux cérébraux}
 
 \subsection{Le signal d'entrée}
 
@@ -83,12 +83,12 @@ Le signal en sortie de la BCI est influencé par trois plaques clignotant respec
 	\label{fig:duck}
 \end{figure}
 
-Pour faciliter l'exploitation des résultats nous avons appliqué deux modifications aux signaux enregistrés. \\
+Pour faciliter l'exploitation des résultats nous avons appliqué un pré-processing aux signaux enregistrés. \\
 
 Tout d'abord, les signaux enregistrés sont bi-canaux. Ainsi, pour qu'ils soient plus faciles à manipuler par la suite, nous les avons transformés en signaux monocanal correspondant à la moyenne des deux canaux. \\
 
 
-Ensuite, le problème est que les signaux enregistrés ne possèdent pour l'instant que les valeurs du capteur en fonction du temps. Les labels indiquant quels ordres ont été donné dans le temps ne sont disponibles que de manière écrite dans le sujet. Pour faciliter la modélisation et l'optimisation de la commande de robot par la suite, nous avons ajouté une deuxième colonne à chaque signal monocanal enregistré correspondant à l'ordre attendu en fonction du temps. Pour ce faire, nous avons associé un nombre à chaque ordre: 0 pour l'ordre ne rien faire, 1 pour l'ordre d'avancer, 2 pour l'ordre de tourner à droite et 3 pour l'ordre de tourner à gauche. L'ajout du label automatiquement nous permettra par la suite de créer des scores pour évaluer l'efficacité du traitement du signal que nous effectuerons.
+Ensuite, le problème est que les signaux enregistrés ne possèdent pour l'instant que les valeurs du capteur en fonction du temps. Les labels indiquant quels ordres ont été donné dans le temps ne sont disponibles que de manière écrite dans le sujet. Pour faciliter la modélisation et l'optimisation de la commande de robot par la suite, nous avons ajouté une deuxième colonne à chaque signal monocanal enregistré correspondant à l'ordre attendu en fonction du temps. Pour ce faire, nous avons associé un nombre à chaque ordre: 0 pour l'ordre ne rien faire, 1 pour l'ordre d'avancer, 2 pour l'ordre de tourner à droite et 3 pour l'ordre de tourner à gauche. L'ajout du label automatiquement nous permettra par la suite d'évaluer le taux d'erreur que nous commettons par rapport aux ordres attendus dans le but d'évaluer l'efficacité du traitement du signal que nous effectuerons.
 
 \begin{figure}[!h]
 	\includegraphics[scale=0.35]{images/signalBCIlabele.jpg}
@@ -121,7 +121,7 @@ Malgré que le fait que l'on arrive à distinguer à l'œil nu les ordres à par
 Nous obtenons la puissance en mettant au carré notre signal, cela nous permet d'avoir un signal ne contenant que des valeurs positives. L'effet de lissage permet de réduire le bruit mais cela augmente l'inertie et diminue la résolution. Cet effet de lissage dispose d'un paramètre $ \alpha $ dont nous justifierons le choix par la suite. 
 La puissance lissée nous permet ainsi d'obtenir des signaux exploitables par la suite pour commander le robot grâce à un processus de décision qui va être détaillé dans la suite du rapport. \\
 
-Dans la partie dédiée à la mise en pratique avec ROS, nous allons voir qu'il est nécessaire de mettre en place un buffer pour réduire la fréquence du système. Pour coller le plus possible à la réalité nous allons donc simuler ce buffer grâce à un filtre passe-bas appliqué à la puissance lissée. Cela nous permettra d'effectuer des simulations plus pertinentes. Les filtres passe-bas à les mêmes effets que le lissage de la puissance: diminution du bruit et augmentation de l'inertie.\\
+Ensuite, dans la partie dédiée à la mise en pratique avec ROS, nous allons voir qu'il est nécessaire de mettre en place un buffer pour réduire la fréquence du système. Pour coller le plus possible à la réalité nous allons donc simuler ce buffer grâce à un filtre passe-bas appliqué à la puissance lissée. Cela nous permettra d'effectuer des simulations plus pertinentes. Les filtres passe-bas à les mêmes effets que le lissage de la puissance: diminution du bruit et augmentation de l'inertie.\\
 
 Pour récapituler cette partie, un diagramme se trouve ci-dessous retraçant les différentes étapes par lesquelles passent le signal pour que l'on puisse en extraire un ordre. \\
 
@@ -137,6 +137,20 @@ Pour récapituler cette partie, un diagramme se trouve ci-dessous retraçant les
 \cleardoublepage
 
 
+Nous avons donc tenté de comprendre pourquoi nous obtenons de si mauvais résultats pour le premier enregistrement. Nous avons fait plusieurs hypothèses et nous avons trouvés deux explications. \\
+
+\begin{figure}[!h]
+	\includegraphics[scale=0.75]{images/herve001corect.jpg}
+	\caption{Explications quant aux mauvaises performances du premier enregistrement}
+	\label{fig:duck}
+\end{figure}
+
+L'image ci-dessous résume les deux explications à ce mauvais résultat. La première explication est que le signal mesuré semble décalé d'environ 4 secondes par rapport à ce qui est attendu. La figure illustre cela uniquement avec la commande "tourner à droite", mais le même constat peut être fait sur les autres commandes. La seconde explication est qu'à la toute fin de l'enregistrements, nous attendons la commande "tourner à droite", or l'expérimentateur semble avoir arrêté de regarder la LED clignotante pendant les quinze dernières secondes avant de terminer l'enregistrement. \\
+
+
+Ce que nous avons donc fait, c'est que nous avons décalé les labels de 4s et tronqué les 15 dernières secondes du signal. Nous avons ensuite recalculé l'erreur pour ce nouveau signal et le résultat est bien meilleur. En effet, nous avions une erreur auparavant d'environ 55\% et avec le signal modifié, nous avons diminué l'erreur de 28\% pour atteindre les 27\% d'erreur.
+
+
 \import{/}{signauxopt}
 
 \cleardoublepage
@@ -144,16 +158,9 @@ Pour récapituler cette partie, un diagramme se trouve ci-dessous retraçant les
 %%%Commande du robot%%%
 
 \import{/}{ROS}
-
+\cleardoublepage
 \section{Conclusion}
 \cleardoublepage
 
-
-%%%Annexe%%%
-
-\section{Annexe}
-
-
-\cleardoublepage
 
 \end{document}

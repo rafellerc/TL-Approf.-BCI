@@ -1,15 +1,8 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Extraction de la commande du robot \IeC {\`a} partir des signaux c\IeC {\'e}r\IeC {\'e}braux}{2}
+\contentsline {section}{\numberline {2}\IeC {\'E}tapes amenant \IeC {\`a} l'extraction de la commande du robot \IeC {\`a} partir des signaux c\IeC {\'e}r\IeC {\'e}braux}{2}
 \contentsline {subsection}{\numberline {2.1}Le signal d'entr\IeC {\'e}e}{2}
-<<<<<<< HEAD
 \contentsline {subsection}{\numberline {2.2}Etapes pour l'extraction de la commande \IeC {\`a} partir du signal}{4}
-\contentsline {section}{\numberline {3}Conclusion}{7}
-\contentsline {section}{\numberline {4}Annexe}{8}
-=======
-\contentsline {subsection}{\numberline {2.2}Architecture globale de la solution choisie}{4}
 \contentsline {section}{\numberline {3}Contr\IeC {\^o}le du Robot}{7}
 \contentsline {subsection}{\numberline {3.1}Choix d'architecture}{7}
 \contentsline {subsection}{\numberline {3.2}Mise en oeuvre du syst\IeC {\`e}me et r\IeC {\'e}sultats}{8}
-\contentsline {section}{\numberline {4}Conclusion}{10}
-\contentsline {section}{\numberline {5}Annexe}{11}
->>>>>>> ad1e0bb5fd3a1a75791c0c763151fcacc0175a31
+\contentsline {section}{\numberline {4}Conclusion}{11}
