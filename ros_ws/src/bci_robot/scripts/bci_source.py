@@ -8,10 +8,9 @@ from os import path
 
 def bci_source(file_path):
     print("Initializing /bci_source")
-    print("""This node feeds a 256 Hz stream of samples from the BCI measurements,
-    to a topic called dataBCI. The current version simulates the real-time acquisition
-    of the signal by reading a text file containing real measurements.
-    """)
+    print("This node feeds a 256 Hz stream of samples from the BCI measurements,\
+to a topic called dataBCI. The current version simulates the real-time acquisition\
+of the signal by reading a text file containing real measurements.")
 
     #Reads all the information from the file
     X = np.loadtxt(file_path)

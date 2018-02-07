@@ -9,7 +9,7 @@
 \usepackage{listings}
 \usepackage{pdfpages}
 \usepackage{import}
-
+\usepackage{listings}
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -58,11 +58,11 @@
 \setcounter{page}{1}
 \section{Introduction}
 
-Lors de ses 11 séances de TL d'approfondissement, nous avons eu l'occasion de réaliser la commande du robot Khepera à partir de signaux provenant d'une interface cerveau machine (BCI). Ce projet nous a permis de mettre en pratique les connaissances que nous avons acquises lors des cours de la majeure Systèmes Interactifs et Robotiques et plus particulièrement celles des cours Modélisation et Analyse Spectrale, Robotique autonome et Programmation C++.\\
+Lors de ses 11 séances de TL d'approfondissement, nous avons eu l'occasion de réaliser la commande d'un robot Khepera à partir de signaux provenant d'une interface cerveau machine (BCI). Ce projet nous a permis de mettre en pratique les connaissances que nous avons acquises lors des cours de la majeure Systèmes Interactifs et Robotiques et plus particulièrement celles des cours de Modélisation et Analyse Spectrale, Robotique autonome et Programmation C++.\\
 
-\noindent Deux robots Khepera, un système d'acquisition cérébrale et des signaux pré-enregistrés ont été mis à notre disposition pour ce projet.Le robot ne sera commandé que par 4 ordres: rester immobile, tourner à droite, tourner à gauche et avancer.\\
+\noindent Deux robots Khepera, un système d'acquisition cérébrale et 3 signaux préenregistrés ont été mis à notre disposition pour ce projet. Le robot ne sera commandé que par 4 ordres: rester immobile, tourner à droite, tourner à gauche et avancer.\\
 
-\noindent Notre travail à travers les séances et dans ce rapport est décomposé en 2 grandes étapes: l'extraction des commandes sur les signaux BCI et le contrôle du robot. Ces deux étapes sont ensuite réunies sous C++ grâce au framework ROS.
+\noindent Notre travail à travers les séances et dans ce rapport est décomposé en 2 grandes étapes: l'extraction des commandes sur les signaux BCI que nous avons effectué principalement sous Matlab et le contrôle du robot grâce au framework ROS et à Python.
 
 
 \cleardoublepage
@@ -73,7 +73,7 @@ Lors de ses 11 séances de TL d'approfondissement, nous avons eu l'occasion de r
 
 \subsection{Le signal d'entrée}
 
-Le signal de commande que l'on va être amené à analyser en entrée du système correspond au signal en sortie  de la BCI. Dans le cadre de ce TL, 3 signaux ont été enregistrés à une fréquence de 256Hz et peuvent être rejoués à volonté. Pour chaque période de temps, les signaux enregistrés possèdent deux valeurs correspondant aux deux canaux du capteurs. Nous aurions pu effectuer nos propres enregistrements à l'aide d'un capteur BIOSEMI à 2048Hz mais par manque de temps, nous nous sommes concentrés sur les signaux déjà enregistrés. \\
+Le signal de commande que l'on va être amené à analyser en entrée du système correspond au signal en sortie de la BCI. Dans le cadre de ce TL, 3 signaux pré-enregistrés à une fréquence de 256Hz nous ont été fournis et peuvent être rejoués à volonté. Pour chaque période de temps, les signaux enregistrés possèdent deux valeurs correspondant chacune à un canal du capteur. Nous aurions pu effectuer nos propres enregistrements à l'aide d'un capteur BIOSEMI à 2048Hz mais par manque de temps, nous nous sommes concentrés sur les signaux déjà enregistrés. \\
 
 Le signal en sortie de la BCI est influencé par trois plaques clignotant respectivement autour de 7.5Hz, 11Hz et 13.5Hz. Lorsque l'expérimentateur regarde l'une des plaques à une fréquence donnée, cette fréquence se répercute dans l'émission de ses signaux cérébraux et se retrouve dans le signal récupéré par la BCI. Chacune de ces plaques clignotantes correspond à un ordre particulier. L'expérimentateur doit regarder la plaque clignotant à 7.5Hz si il veut que le robot tourne à gauche, celle clignotant à 11Hz si il veut que le robot avance, celle clignotant à 13.5Hz si il veut que le robot tourne à droite et ne regarder aucune plaque si il veut que le robot s'arrête.
 
@@ -85,10 +85,10 @@ Le signal en sortie de la BCI est influencé par trois plaques clignotant respec
 
 Pour faciliter l'exploitation des résultats nous avons appliqué deux modifications aux signaux enregistrés. \\
 
-Tout d'abord, les signaux enregistrés sont bi-canaux. Ainsi, pour qu'ils soient plus faciles à manipuler par la suite, nous les avons transformé en signaux mono-canal correspondant à la moyenne des deux canaux. \\
+Tout d'abord, les signaux enregistrés sont bi-canaux. Ainsi, pour qu'ils soient plus faciles à manipuler par la suite, nous les avons transformés en signaux monocanal correspondant à la moyenne des deux canaux. \\
 
 
-Ensuite, les signaux enregistrés ne possèdent que les valeurs du capteur en fonction du temps, les labels indiquant quels ordre ont été donné dans le temps ne sont disponibles que de manière écrite dans le sujet. Pour faciliter la modélisation et l'optimisation de la commande de robot, nous avons ajouté une deuxième colonne au signaux mono-canal enregistrés correspondant à l'ordre attendu en fonction du temps. Pour ce faire, nous avons associé un nombre à chaque ordre: 0 pour l'ordre ne rien faire, 1 pour l'ordre d'avancer, 2 pour l'ordre de tourner à droite et 3 pour l'ordre de tourner à gauche. L'ajout du label automatiquement nous permettra par la suite de créer des scores pour évaluer l'efficacité du traitement du signal que nous effectuerons.
+Ensuite, le problème est que les signaux enregistrés ne possèdent pour l'instant que les valeurs du capteur en fonction du temps. Les labels indiquant quels ordres ont été donné dans le temps ne sont disponibles que de manière écrite dans le sujet. Pour faciliter la modélisation et l'optimisation de la commande de robot par la suite, nous avons ajouté une deuxième colonne à chaque signal monocanal enregistré correspondant à l'ordre attendu en fonction du temps. Pour ce faire, nous avons associé un nombre à chaque ordre: 0 pour l'ordre ne rien faire, 1 pour l'ordre d'avancer, 2 pour l'ordre de tourner à droite et 3 pour l'ordre de tourner à gauche. L'ajout du label automatiquement nous permettra par la suite de créer des scores pour évaluer l'efficacité du traitement du signal que nous effectuerons.
 
 \begin{figure}[!h]
 	\includegraphics[scale=0.35]{images/signalBCIlabele.jpg}
@@ -99,9 +99,9 @@ Ensuite, les signaux enregistrés ne possèdent que les valeurs du capteur en fo
 \cleardoublepage
 
 
-\subsection{Architecture globale de la solution choisie}
+\subsection{Etapes pour l'extraction de la commande à partir du signal}
 
-Comme on peut le constater sur la figure 1, le signal a besoin d'être traité pour pouvoir être exploité par la suite. La première étape va consister à extraire du signal de départ 3 signaux autour des fréquences qui nous intéresse à savoir 7.5 Hz, 11Hz et 13.5Hz. Pour effectuer cela nous utilisons 3 filtres passe-bande dont les paramètres sont la bande passante: $\Delta$ f, le gain: G et la fréquence centrale: fc. La fréquence centrale correspond respectivement à 7.5Hz, 11Hz et 13.5Hz pour chacun des 3 filtres. Nous verrons par la suite le moyen par lequel on a optimisé les autres paramètres. Comme le montre la figure 3 ci-dessous, nous pouvons constater que ce premier filtre nous permet déjà de distinguer les ordres donnés par l'expérimentateur via la BCI.
+Comme on peut le constater sur la figure 1, le signal a besoin d'être traité pour pouvoir être exploité par la suite. La première étape va consister à extraire du signal de départ 3 signaux autour des fréquences qui nous intéresse à savoir 7.5 Hz, 11Hz et 13.5Hz. Pour effectuer cela nous utilisons 3 filtres passe-bande dont les paramètres sont la bande passante: $\Delta$ f, le gain: G et la fréquence centrale: fc. Les fréquences centrales correspond respectivement à 7.5Hz, 11Hz et 13.5Hz pour chacun des 3 filtres. Nous verrons par la suite le moyen par lequel nous avons optimisé les autres paramètres. Comme le montre la figure 3 ci-dessous, nous constatons que ce premier filtre nous permet déjà de distinguer les ordres donnés par l'expérimentateur via la BCI.
 
 \begin{figure}[!h]
 	\includegraphics[scale=0.75]{images/Sigauxfiltreslables.jpg}
@@ -109,7 +109,7 @@ Comme on peut le constater sur la figure 1, le signal a besoin d'être traité p
 	\label{fig:duck}
 \end{figure}
 
-Malgré que le fait que l'on arrive à distinguer à l'œil nu les ordres à partir des 3 signaux en sortie des filtres passe-bande, il est nécessaire d'obtenir des signaux plus propres pour par la suite formaliser un processus de décision concernant la commande du robot. Pour cela nous allons calculé la puissance lissée de chacun des 3 signaux. 
+Malgré que le fait que l'on arrive à distinguer à l'œil nu les ordres à partir des 3 signaux en sortie des filtres passe-bande, il est nécessaire d'obtenir des signaux plus propres pour par la suite formaliser un processus de décision concernant la commande du robot. En effet, le signal est toujours sous forme sinusoïdale, ce qui n'est pas pratique pour calculer son amplitude à un moment précis. De plus, le signal est encore très sensible au bruit. Pour résoudre ces problèmes nous allons calculer la puissance lissée de chacun des 3 signaux.\\
 
 
 \begin{figure}[!h]
@@ -118,17 +118,19 @@ Malgré que le fait que l'on arrive à distinguer à l'œil nu les ordres à par
 	\label{fig:duck}
 \end{figure}
 
-L'effet de lissage permet de réduire le bruit mais cela augmente l'inertie et diminue la résolution. Cet effet de lissage dispose d'un paramètre $ \alpha $ dont nous justifierons le choix par la suite.
+Nous obtenons la puissance en mettant au carré notre signal, cela nous permet d'avoir un signal ne contenant que des valeurs positives. L'effet de lissage permet de réduire le bruit mais cela augmente l'inertie et diminue la résolution. Cet effet de lissage dispose d'un paramètre $ \alpha $ dont nous justifierons le choix par la suite. 
+La puissance lissée nous permet ainsi d'obtenir des signaux exploitables par la suite pour commander le robot grâce à un processus de décision qui va être détaillé dans la suite du rapport. \\
 
-La puissance lissée nous permet ainsi d'obtenir des signaux exploitables par la suite pour commander le robot grâce à un processus de décision qui va être détaillé dans la suite du rapport.
+Dans la partie dédiée à la mise en pratique avec ROS, nous allons voir qu'il est nécessaire de mettre en place un buffer pour réduire la fréquence du système. Pour coller le plus possible à la réalité nous allons donc simuler ce buffer grâce à un filtre passe-bas appliqué à la puissance lissée. Cela nous permettra d'effectuer des simulations plus pertinentes. Les filtres passe-bas à les mêmes effets que le lissage de la puissance: diminution du bruit et augmentation de l'inertie.\\
+
+Pour récapituler cette partie, un diagramme se trouve ci-dessous retraçant les différentes étapes par lesquelles passent le signal pour que l'on puisse en extraire un ordre. \\
+
 
 \begin{figure}[!h]
-	\includegraphics[scale=0.75]{images/diagramme.jpg}
+	\includegraphics[scale=0.65]{images/diagramme.jpg}
 	\caption{Récapitulatif de l'architecture nous permettant de prendre une décision quant à l'ordre à donner au robot}
 	\label{fig:duck}
 \end{figure}
-
-
 
 
 
